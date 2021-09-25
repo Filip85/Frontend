@@ -1,0 +1,42 @@
+.footer {
+
+    &__list {
+        // display: flex;
+        // align-items: center;
+        font-size: 0.9em;
+
+        &--item {
+            margin: auto;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+
+    &__copyright {
+        display: block;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    @include mq-up('tablet') {
+        &__list {
+            display: flex;
+            justify-content: space-between;
+    
+            &--wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &--item {
+                margin: 0 10px 0 0;
+            }
+        }
+
+        &__copyright {
+            display: block;
+            padding-bottom: 0;
+        }
+    }
+}

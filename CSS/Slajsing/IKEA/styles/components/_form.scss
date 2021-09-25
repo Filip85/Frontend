@@ -1,0 +1,89 @@
+.form {
+    margin: 20px 0 5px 70px; 
+
+    span {
+        display: block;
+    }
+
+    input[type=radio] {
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+    input[type=checkbox] {
+        display: inline-block;
+    }
+
+    input[type=text] {
+        &:focus {
+            outline: none;
+        }
+    }
+
+    // &__link {
+    //     text-decoration: dashed;
+    // }
+
+    &__one {
+        padding-bottom: 50px;
+    }
+
+    &__input {
+        @include input(100%, 0, 30px, 0.9em);
+        // min-width: 100%;
+        // border: 0;
+        // border-bottom: 1px solid black;
+        // padding-top: 30px;
+        // font-size: 0.9em;
+
+        &-two {
+            @include input(100%, 1, 5px, 1em);
+            // min-width: 100%;
+            // // border: 0;
+            // // border-bottom: 1px solid black;
+            // // padding-top: 30px;
+            // padding: 5px;
+            // font-size: 1em;
+            // margin-bottom: 10px;
+            // border: 1px solid rgba($color-black, 0.5);
+            // line-height: 20px;
+        }
+
+        &-wrapper {
+            margin-top: 20px;
+
+            &--alt {
+                position: relative;
+            }
+        }
+    }
+
+    &__two {
+        padding-bottom: 50px;
+    }
+
+    &__zipcode {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__zipcodeTitle {
+        padding-bottom: 3px;
+    }
+
+    &__proceed {
+        display: block;
+        margin: 30px 0 10px;
+    }
+
+    &__protocol {
+        background-color: #ededed;
+        padding: 20px;
+    }
+}

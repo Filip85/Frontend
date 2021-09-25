@@ -1,0 +1,18 @@
+.list {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        padding: 0 15px;
+        border-left: solid 1px $color-gray;
+
+        &:first-child {
+            border-left: none;
+        }
+
+        &:hover {
+            color: $color-blue;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+$color-primary: black;
+$color-white: white;
+$color-grey: #e8e8e8;
+$color-grey2: rgba(174, 174, 174, 0.7);
+
+
+$theme-color: (
+    primary: $color-primary,
+    white: $color-white,
+    grey: $color-grey,
+    grey2: $color-grey2
+);
+
+@function theme-color($key) {
+    @return map-get($theme-colors, $key);
+}

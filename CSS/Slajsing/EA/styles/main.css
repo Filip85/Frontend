@@ -1,0 +1,447 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  color: #3d3d3d;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+*, *:before, *:after {
+  font-family: inherit;
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  font-size: 1em;
+}
+
+a {
+  color: #3d3d3d;
+  text-decoration: none;
+}
+
+.logo-wrapper {
+  width: 180px;
+  height: 20px;
+}
+
+.block {
+  display: block;
+}
+
+.container {
+  margin: auto;
+  max-width: 1020px;
+  padding: 0 40px;
+}
+
+.display__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.active {
+  background-color: #d6d5d5;
+}
+
+.svg {
+  vertical-align: middle;
+}
+.svg-wrapper {
+  width: 220px;
+  height: 55px;
+  padding-bottom: 35px;
+}
+.svg__benefit {
+  width: 1em;
+  height: 1em;
+  fill: white;
+}
+.svg__arrow {
+  width: 0.6em;
+  height: 0.6em;
+  color: #161616;
+}
+.svg__play {
+  width: 240px;
+  height: 100px;
+}
+.svg__social {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.benefit {
+  background-color: #161616;
+  height: 40px;
+  text-align: end;
+  padding: 10px 0;
+}
+.benefit__link {
+  padding-right: 45px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #f2f2f2;
+  padding: 10px 55px;
+  display: flex;
+  align-items: center;
+}
+
+.updates__list {
+  padding: 20px 0;
+  overflow-x: auto;
+}
+.updates__item {
+  padding: 20px 0;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+}
+.list__item {
+  margin-right: 35px;
+  font-size: 1.2em;
+}
+.list__logo {
+  width: 180px;
+  margin-right: 20px;
+}
+.list__none {
+  display: none;
+}
+@media (min-width: 689px) {
+  .list__none {
+    display: flex;
+  }
+}
+
+.button__primary {
+  padding: 18px 25px;
+  font-size: 1.2em;
+  color: #3d3d3d;
+  background-color: transparent;
+  border: 2px solid #3d3d3d;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button__primary:hover {
+  transition: padding 0.1s ease-in;
+  padding: 20px 27px;
+}
+.button__secondary {
+  padding: 18px 40px;
+  font-size: 1.2em;
+  color: white;
+  background-color: #fa4748;
+  border: 2px solid #fa4748;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button__secondary:hover {
+  transition: padding 0.1s ease-in;
+  padding: 20px 42px;
+}
+@media (min-width: 689px) {
+  .button__primary {
+    padding: 18px 25px;
+    font-size: 1.2em;
+    color: #3d3d3d;
+    background-color: transparent;
+    border: 2px solid #3d3d3d;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .button__primary:hover {
+    transition: padding 0.1s ease-in;
+    padding: 20px 27px;
+  }
+}
+@media (min-width: 689px) {
+  .button__secondary {
+    padding: 18px 40px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #fa4748;
+    border: 2px solid #fa4748;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .button__secondary:hover {
+    transition: padding 0.1s ease-in;
+    padding: 20px 42px;
+  }
+}
+
+.section {
+  color: #3d3d3d;
+}
+.section__title {
+  font-size: 2.8em;
+  padding-bottom: 45px;
+}
+.section__subtitle {
+  font-size: 2.8em;
+  padding-bottom: 40px;
+}
+.section__details {
+  padding: 105px 0 90px;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+.section__getMoreGames {
+  padding-bottom: 30px;
+  background-color: black;
+  position: relative;
+}
+@media (min-width: 689px) {
+  .section__getMoreGames {
+    padding-bottom: 0;
+  }
+}
+.section__featuredGames {
+  padding: 75px 0 0;
+  border-bottom: 1px solid #3d3d3d;
+  text-align: center;
+}
+.section__articles {
+  padding: 55px 0 45px;
+}
+.section__video {
+  background-color: black;
+  position: relative;
+}
+.section__parent {
+  padding: 25px 0;
+  background-color: #6fb0d6;
+}
+.section__parent span {
+  font-size: 1.6em;
+}
+
+.play {
+  color: white;
+  max-width: 500px;
+  position: block;
+  padding: 35px;
+  margin: auto;
+}
+.play__title {
+  font-size: 3em;
+  padding: 0px 0 25px;
+}
+.play__save {
+  font-size: 1em;
+  padding-bottom: 30px;
+}
+@media (min-width: 993px) {
+  .play {
+    position: absolute;
+    top: 18%;
+    left: 24%;
+    background-color: transparent;
+  }
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+@media (min-width: 689px) {
+  .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 993px) {
+  .card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  height: 500px;
+  transition: top 1s linear;
+  position: relative;
+  background-color: white;
+}
+.card a {
+  color: #3d3d3d;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+.card span {
+  display: inline-block;
+  font-size: 1.1em;
+  padding-bottom: 15px;
+}
+.card__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 60px;
+  width: 120px;
+}
+.card:hover .card__logo {
+  transition: top 0.5s ease-in-out;
+  top: 20%;
+}
+.card__image {
+  width: 100%;
+  height: 195px;
+}
+.card__information {
+  padding: 30px 55px 55px 25px;
+}
+.card__date {
+  padding-left: 20px;
+}
+.card__title {
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+.card__subtitle {
+  font-size: 1.15em;
+}
+.card__button {
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 689px) {
+  .card {
+    height: 300px;
+  }
+  .card-alt {
+    width: 350px;
+    height: 425px;
+  }
+}
+
+.footer {
+  padding: 55px 0 105px;
+}
+.footer__link {
+  color: #3d3d3d;
+  text-decoration: none;
+}
+.footer__list {
+  font-size: 0.85em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #d6d5d5;
+}
+.footer__item {
+  display: block;
+  padding-bottom: 20px;
+}
+.footer__join {
+  font-weight: bold;
+}
+@media (min-width: 689px) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer__list {
+    flex-direction: row;
+    border-bottom: 0;
+  }
+  .footer__item {
+    margin: 0 25px 0 0;
+  }
+  .footer__social {
+    padding-top: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

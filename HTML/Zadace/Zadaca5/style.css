@@ -1,0 +1,38 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form {
+    width: 600px;
+    margin: 3rem auto;
+    background-color: #ECC8AF;
+}
+
+legend {
+    color: #495867;
+}
+
+.delivery-puck-up {
+    background-color: #CE796B;
+    padding: 10px;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+option:hover {
+    background-color: yellow;
+}
+
+.payment-details {
+    display: grid;
+}
+
+.submit-button {
+    background-color: #CE796B;
+    padding: 10px;
+}

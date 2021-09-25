@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*button {
+            font-size: 1.5rem;
+            width: 6em;
+            height: 2em;
+            border-radius: 6px;
+            background-color: transparent;
+            --button1-bg-color: black;
+            --button2-bg-color: blue;
+            --button1-font-color: black;
+            --button2-font-color: blue;
+            --button-hover-font-color: white;
+        }
+
+        .button1 {
+            margin-bottom: 0.5em;
+            border-color: var(--button1-font-color);
+            color: var(--button1-font-color, --button2-font-color)
+        }
+
+        .button2 {
+            border-color: var(--button2-font-color);
+            color: var(--button2-bg-color, --button1-font-color)
+        }
+
+        .button:hover {
+            background-color: var(--button1-bg-color);
+            color: var(--button-hover-font-color)
+        }
+
+        .button2:hover {
+            background-color: var(--button2-bg-color);
+            color: var(--button-hover-font-color)
+        }*/
+
+        div > button {
+            margin-bottom: 20px;
+        }
+
+        button {
+            font-size: 1.5rem;
+            width: 6em;
+            height: 2em;
+            border-radius: 6px;
+            background-color: transparent;
+            --bg-color: black;
+            --font-color: white;
+        }
+
+        button:hover {
+            background-color: var(--bg-color);
+            color: var(--font-color);
+        }
+
+        button.blue {
+            --bg-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <button class="black">Click me</button>
+        <br>
+        <button class="blue">Click me</button>
+    </div>
+
+    <div>
+        <button style="--bg-color: green;" class="green">Click me</button>
+        <br>
+        <button style="--bg-color: pink" class="pink">Click me</button>
+    </div>
+</body>
+</html>

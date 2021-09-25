@@ -1,0 +1,113 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    background-color: #CECECE;
+}
+
+body {
+    width: 80%;
+    min-width: 600px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, p {
+    color: #000028;
+}
+
+h1 {
+    font-size: 3.5rem;
+    /*text-align: center;*/
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p, li {
+    font-size: 1rem;
+}
+
+.logo, .feature {
+    max-width: 150px;
+}
+
+body > * {
+    background-color: rgba(200, 0, 0, .5);
+}
+
+header, nav, main, article, aside, footer, section {
+    background-color: rgba(0, 200, 0, .5);
+    padding: 1rem;
+    border: 1px dashed rgb(0, 80, 0);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+nav {
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    font-size: 1.5rem;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+article {
+    display: grid;
+    grid-template-areas:
+            'header header'
+            'content side'
+            'footer footer';
+    grid-template-columns: 2fr 1fr;
+}
+
+article > * {
+    grid-area: content;
+}
+
+article > header {
+    grid-area: header;
+}
+article > div {
+    grid-area: content;
+}
+article > aside {
+    grid-area: side;
+    margin-left: .5rem;
+}
+article > footer {
+    grid-area: footer;
+}
+
+footer {
+    margin-top: 1rem;
+}

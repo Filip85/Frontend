@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="yo"></div>
+    <div class="container">
+        <div class="card-wrapper">
+            <script id="countriesTemplate" type="text/x-handlebars-template">
+                {{#each data}}
+                <div class="card">
+                    <div class="card__title">
+                        <h2>{{name}}</h2>
+                    </div>
+                    <img src="{{flag}}" class="card__image">
+        
+                    <div class="card__info">
+                        <p class="card__info--p">Capital: {{capital}}</p>
+                        <p class="card__info--p">Region: {{region}}</p>
+                        <p class="card__info--p">Population {{population}}</p>
+                        <p class="card__info--p">Currencies: {{currencies.name}}</p>
+                    </div>
+                </div>
+                {{/each}}
+            </script>
+        </div>
+    </div>
+
+    <div class="js-wrapper">
+        <script id="countryTemplate" type="text/x-handlebars-template">
+            {{#each data}}
+            <div class="card card--alt">
+                <div class="card__title">
+                    <h2>{{name}}</h2>
+                </div>
+                <img src="{{flag}}" class="card__image">
+    
+                <div class="card__info">
+                    <p class="card__info--p">Capital: {{capital}}</p>
+                    <p class="card__info--p">Region: {{region}}</p>
+                    <p class="card__info--p">Population {{population}}</p>
+                    <p class="card__info--p">Currencies: {{currencies.name}}</p>
+                </div>
+            </div>
+            {{/each}}
+        </script>
+    </div>
+
+    <div class="pokemones"></div>
+
+    <script src="handlebars-v4.7.7.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script> -->
+    <script src="script4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+</html>

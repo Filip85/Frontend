@@ -1,0 +1,25 @@
+.svg {
+    
+    &__small {
+        width: 0.9em;
+        height: 0.9em;
+        vertical-align: middle;
+    }
+
+    &__medium {
+        width: 1.3em;
+        height: 1.3em;
+        vertical-align: middle;
+    }
+
+    &__big {
+        width: 1.6em;
+        height: 1.6em;
+    }
+
+    &__social {
+        width: 35px;
+        height: 35px;
+        vertical-align: middle;
+    }
+}

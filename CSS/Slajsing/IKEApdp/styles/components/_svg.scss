@@ -1,0 +1,24 @@
+svg {
+    // fill: gray;
+    width: 1.2em;
+    height: 1.2em;
+    transform: rotate(360deg);
+  }
+
+.position {
+    position: absolute;
+    top: 22%;
+    left: 3%;
+}
+
+.svg {
+
+    &__information {
+      width: 0.9em;
+      height: 0.6em;
+    }
+}
+
+.rotate {
+  transform: rotate(90deg);
+}

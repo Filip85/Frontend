@@ -1,0 +1,41 @@
+.popup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    transition: all 150ms ease-in;
+    z-index: 10;
+
+    &-alt {
+        padding: 70px;
+        background-color: white;
+        border-top-left-radius: 10px;
+        position: fixed;
+        // top: 90%;
+        height: 100vh;
+    }
+
+    &__X {
+        @include button(0.9em, 5px, 8px, white, $color-text, transparent, 25px);
+        display: block;
+        margin-left: auto;
+    }
+
+    &__title {
+        font-size: 2em;
+        color: white;
+
+        &-alt {
+            color: $color-text;
+        }
+    }
+
+    &__description {
+        padding: 30px 0 1px;
+        display: block;
+
+        &-alt {
+            padding: 5px 0 0;
+        }
+    }
+}

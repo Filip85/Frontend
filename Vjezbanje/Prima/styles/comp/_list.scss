@@ -1,0 +1,126 @@
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 1px solid $color-gray;
+    padding-left: 40px;
+    font-weight: bold;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__primary {
+        &-first {
+            display: none;
+        }
+
+        &-second {
+            display: none;
+        }
+    }
+
+    &__item {
+        @include listItem(0.8em, 10px);
+
+        &-alt {
+            a {
+                color: $color-gray;
+            }
+        }
+
+        &:last-of-type {
+            padding-right: 25px;
+        }
+
+        &__form {
+            padding-bottom: 15px;
+
+            &::before {
+                content: "•";
+                padding-right: 10px;
+            }
+        }
+
+        &-circle {
+            padding: 6px 5px;
+            border: 1px solid rgba($color-black, 0.2);
+            height: 31px;
+            width: 31px;
+            border-radius: 50%; 
+            background-color: transparent;
+        }
+
+        &__footer {
+            width: 55px;
+        }
+
+        &__social {
+            padding: 0 65px 35px 0;
+        }
+    }
+
+    &-more {
+        padding: 30px 15px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: none;
+    }
+
+    &__features {
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        font-size: .8em;
+
+        svg {
+            fill: white
+        }
+    }
+
+    &__footer {
+        width: 150px;
+        display: flex;
+        flex-wrap: wrap;
+
+        &__title {
+            font-size: 1.6em;
+        }
+    }
+
+    &__social {
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 25px;
+    }
+
+    @include mq-up("tablet") {
+        &__primary {
+            &-first {
+                display: flex;
+            }
+        }
+    }
+
+    @include mq-up("desktop") {
+        &__primary {
+            &-second {
+                display: flex;
+            }
+        }
+
+        &__item {
+            @include listItem(0.8em, 30px);
+        }
+
+        &-more {
+            display: flex;
+        }
+
+        &__features {
+            flex-direction: row;
+        }
+    }
+}

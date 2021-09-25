@@ -1,0 +1,50 @@
+.section {
+
+   &__title {
+       display: block;
+       margin: auto;
+       padding-bottom: 30px;
+       text-align: center;
+
+       &-alt {
+            font-size: 1.8em;
+            padding-bottom: 60px;
+       }
+   } 
+
+   &__more {
+       padding-bottom: 120px;
+
+       @include mq-up("tablet") {
+           padding-bottom: 60px;
+       }
+   }
+
+   &__category {
+       padding: 60px 0 60px;
+   }
+
+   &__form {
+       padding: 60px 40px;
+       color: $color-white;
+   }
+
+
+   &__action {
+       padding: 0 0 60px;
+   }
+
+   &__features {
+       padding: 20px 0;
+   }
+
+   &__newsletter {
+       background-color: $color-gray-two;
+       padding: 25px 0;
+   }
+
+   &__features {
+       padding: 25px 0 20px;
+       background-color: $color-black;
+   }
+}

@@ -1,0 +1,14 @@
+svg {
+    fill: gray;
+    width: 0.8em;
+    height: 0.8em;
+    transform: rotate(90deg);
+    transition: 200ms;
+  }
+
+.position {
+  position: absolute;
+  top: 7%;
+  right: 30px;
+  transform: rotate(0);
+}

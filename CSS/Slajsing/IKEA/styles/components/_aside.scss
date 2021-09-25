@@ -1,0 +1,199 @@
+.aside {
+    padding: 0;
+    max-width: 466px;
+    margin-bottom: 60px;
+    padding: 0 0 0 20px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+
+    label {
+        padding-left: 20px;
+    }
+
+    input[type=text] {
+        border: 0;
+        border-bottom: 1px solid $color-text;
+        color: $color-black;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 1em;
+        padding-bottom: 5px;
+    }
+
+    a {
+        color: $color-text;
+        cursor: pointer;
+    }
+
+    &__content {
+        border-bottom: 1px solid rgba($color-black, 0.2);
+
+        &-alt {
+            margin-bottom: 0px;
+            margin-top: 50px
+        }
+    }
+
+    &__order {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+
+    &__product {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    &__arrowButton {
+        @include button(0.9em, 10px, 10px, white, white, black, 25px);
+        cursor: pointer;
+    }
+
+    &__summary {
+        margin-top: 30px;
+    }
+
+    &__status {
+        color: $color-pink;
+        display: block;
+        padding-bottom: 5px;
+    }
+
+    &__title {
+        display: inline;
+        font-size: 1.2em;
+        font-weight: map-get($font-weights, "bold");
+        color: $color-text;
+        padding: 5px 0;
+    }
+
+    &__price {
+        &-alt {
+            font-size: 1.2em;
+            color: black;
+        }
+
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 25px;
+        }
+    }
+
+    &__description {
+        padding: 5px 0;
+    }
+
+    &__rating {
+        padding-bottom: 15px;
+    }
+
+    &__putInCartButton {
+        @include button(0.9em, 8px, 150px, blue, white, transparent, 25px);
+        margin-bottom: 20px;
+    } 
+
+    &__delivery {
+        @include display(space-between, center);
+        gap: 5px;
+        padding: 20px 0 30px;
+        // border-bottom: 1px solid rgba($color-black, 0.2);
+
+        &-alt {
+            padding: 20px 0 20px;
+            // border-bottom: 2px solid $color-text;
+        }
+
+        &:last-of-type {
+            border-bottom: 2px solid $color-text;
+        }
+    }
+
+    //aside-cart
+    &__summary {
+        color: black;
+        display: block;
+    }
+
+    &__body {
+        border-bottom: 2px solid $color-text;
+
+        &-alt {
+            border: none;
+            padding-top: 20px;
+        }
+    }
+
+    &__profile {
+        padding-right: 10px;
+
+        span {
+            display: block;
+        }
+
+        &-wrapper {
+            @include display(space-between, center);
+            border: 1px solid $color-text;
+            padding: 15px 10px 10px;
+            margin: 20px 0 10px;
+        }
+    }
+
+    &__discount {
+        
+        &-wrapper {
+            // display: none;
+            // transition: opacity 1s ease-out;
+            // opacity: 0;
+            padding: 20px 0 40px;
+        }
+
+        &:hover .aside__discount-wrapper{
+            // opacity: 1;
+            // display: block;
+        }
+    }
+
+    &__use {
+        position: relative;
+        // display: flex;
+        // justify-content: space-between;
+        padding-top: 20px;
+    }
+
+    // &__pay {
+    //     @include button(1em, 35px, 10px, blue, white, transparent, 0);
+    //     margin: 20px 0;
+    //     width: 100%;
+    //     @include display(space-between, center);
+    // }
+
+    // &__information {
+    //     display: inline-block;
+    // }
+
+    &__return {
+        display: inline-block;
+        padding: 0 10px 10px;
+
+        &-alt {
+            padding-top: 10px;
+        }
+    }
+
+    &__security {
+        display: inline-block;
+        padding: 0 10px 10px;
+    }
+
+    @include mq-up('desktop') {
+        padding: 0 0 0 20px;
+        &__putInCartButton {
+            @include button(0.9em, 8px, 130px, blue, white, transparent, 25px);
+        }
+    }
+}

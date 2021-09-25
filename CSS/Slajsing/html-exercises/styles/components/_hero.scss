@@ -1,0 +1,54 @@
+.hero {
+    position: relative;
+    // background-image: url("../assets/bg.webp");
+    // background-position: center top;
+    // background-size: cover;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: flex-end;
+
+    // min-height: 400px;
+    // padding-bottom: 2rem; 
+
+    img {
+        display: block;
+    }
+    
+    &__content {
+        background-color: $color-bg;
+        width: 100%;
+        padding: 1rem 2rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        @include mq-up('tablet') {
+            background-color: transparent;
+            position: absolute;
+            top: 40%;
+        }
+    }
+
+    &__form {
+        display: flex;
+    }
+
+    &__input {
+        padding: .8rem;
+        border-radius: 0;
+        border: 1px solid $color-border;
+        min-width: 250px;
+        font-size: 1.2rem;
+    }
+
+    &__text {
+        display: none;
+
+        @include mq-up('tablet') {
+            display: block;
+        }
+    }
+}

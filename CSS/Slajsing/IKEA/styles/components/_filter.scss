@@ -1,0 +1,13 @@
+.filter {
+    padding: 10px 0 20px;
+    border-bottom: 1.5px solid rgba($color-black, 0.1);
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-bottom: 56px;
+    }
+}

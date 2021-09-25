@@ -1,0 +1,36 @@
+@mixin mq-up($name) {
+    $min: map-get($grid, $name, 'min');
+
+    @media (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin mq-down($name) {
+    $max: map-get($grid, $name, 'max');
+
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin textColor($bg) {
+    @if $bg == "white" {
+        color: black;
+    }
+    @else {
+        color: transparentize(white, 0.3);
+    }
+}
+
+@mixin circle($width, $height, $border) {
+    height: $height;
+    width: $width;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+
+    @if $border == true {
+        border: 1px solid black;
+    }
+}

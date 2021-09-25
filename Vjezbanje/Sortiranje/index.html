@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <label for="search">
+            <input type="text" id="#search" class="search">
+        </label>
+    
+        <select name="name" id="name">
+            <option value="A-Z">A-Z</option>
+            <option value="Z-A">Z-A</option>
+        </select>
+    
+        <select name="value" id="value">
+            <option value="Ascending">Ascending</option>
+            <option value="Descending">Descending</option>
+        </select>
+    
+        <ul class="list">
+    
+        </ul>
+    </div>
+
+    <script id="templateHandlebars" type="text/x-handlebars-template">
+        {{#each items}}
+            <li>{{name}} - {{value}}
+                <button class="js-delete">Delete</button>
+            </li>
+        {{/each}}
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

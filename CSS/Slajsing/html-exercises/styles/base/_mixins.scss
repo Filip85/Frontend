@@ -1,0 +1,61 @@
+//media query up
+@mixin mq-up($name) {
+    $min: map-get($grid, $name, 'min');
+
+    @media (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin mq-down($name) {
+    $max: map-get($grid, $name, 'max');
+
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin mq-drop($name) {
+    $max: map-get($grid, $name, 'dropdwon');
+
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin  section-styles($url, $border) {
+    background-image: url("../assets/#{$url}");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    @if $border {
+        border-top: 1px solid lighten($color-bg, .5)
+    }
+}
+
+@mixin display($width) {
+    display: flex;
+    justify-content: space-between; 
+}
+
+// @mixin line() {
+    
+// }
+
+// Placeholders
+%card-styles {
+    background: rgba($color-primary, .2);
+    border: 1px solid $color-primary;
+    transition: all 150ms;
+
+    &:hover {
+        border-color: lighten($color-primary, 15);
+        background: transparentize($color-primary, .7);;
+    }
+}
+
+%category-styles {
+    color: rgba($color-text, .8);
+    margin-bottom: .5rem;
+    font-size: 0.8rem;
+}

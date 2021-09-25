@@ -1,0 +1,69 @@
+.section {
+    color: $color-text;
+
+    &__title {
+        font-size: 2.8em;
+        padding-bottom: 45px;
+    }
+
+    &__subtitle {
+        font-size: 2.8em;
+        padding-bottom: 40px;
+    }
+
+    &__details {
+        padding: 105px 0 90px;
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+
+    &__getMoreGames {
+        // background-image: url("https://cdn.akamai.steamstatic.com/steam/apps/1506830/header.jpg?t=1630705401");
+        // background-repeat: no-repeat;
+        // background-position-x: center;
+        // background-size: cover;
+
+        // padding: 95px 0 100px
+        padding-bottom: 30px;
+        background-color: black;
+
+        // height: 620px;
+
+        position: relative;
+
+        @include mq-up('tablet') {
+            padding-bottom: 0;
+        }
+    }
+
+    &__featuredGames {
+        padding: 75px 0 0;
+        border-bottom: 1px solid $color-text;
+
+        text-align: center;
+    }
+
+    &__articles {
+        padding: 55px 0 45px;
+
+    }
+
+    &__video {
+        // padding: 55px 0 20px;
+        // height: 545px;
+        background-color: black;
+
+        position: relative;
+        
+    }
+
+    &__parent {
+        padding: 25px 0;
+
+        background-color: $color-blue;
+
+        span {
+            font-size: 1.6em;
+        }
+    }
+}

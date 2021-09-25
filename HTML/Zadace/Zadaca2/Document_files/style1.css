@@ -1,0 +1,27 @@
+/*body {
+    margin: 0;
+    overflow-y: hidden;
+}
+img {
+    width: 958px;
+    height: 500px
+}
+.background-images {
+    overflow-y: hidden;
+    display: inline-block;
+}
+
+.hummus-list {
+    position: absolute;
+    top: 35%;
+    right: 35%
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}

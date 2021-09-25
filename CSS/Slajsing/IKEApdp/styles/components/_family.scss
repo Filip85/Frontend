@@ -1,0 +1,59 @@
+//Footer
+.family {
+    display: block;
+
+    &__article {
+        width: 345px;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+
+    &__title {
+        color: black;
+    }
+
+    &__description {
+        margin: 25px 0;
+    }
+
+    &__signIn {
+        @include button(0.9em, 15px, 20px, black, $color-primary, transparent, 25px)
+    }
+
+    &__list {
+        // max-width: 320px;
+        display: block;
+        color: pink;
+        // text-align: center;
+    }
+
+    &__language {
+        @include button(0.9em, 15px, 20px, transparent, black, rgba($color-black, 0.2), 25px);
+        @include display();
+        margin: auto;
+    }
+
+    @include mq-up('desktop') {
+        display: flex;
+        justify-content: space-between;
+        
+        &__article {
+            padding-bottom: 150px;
+            margin: 0;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+
+            padding: 0 20px 5px;
+        }
+    }
+
+    @include mq-up('desktop') {
+        &__language {
+            margin: 0;
+        }
+    }
+
+}

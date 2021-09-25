@@ -1,0 +1,39 @@
+.card {
+    background-color: $color-bg;
+    text-align: center;
+    height: 100%;
+    &__content {
+        padding: 1.5rem;
+    }
+
+    &__image {
+        height: 160px;
+
+        &-alt {
+            height: 245px;
+        }
+    }
+
+    &--alt {
+        @extend %card-styles;
+        text-align: left;
+        
+        // background: rgba($color-primary, .2);
+        // border: 1px solid $color-primary;
+        // transition: all 150ms;
+
+        // &:hover {
+        //     border-color: lighten($color-primary, 15);
+        //     background: transparentize($color-primary, .7);;
+        // }
+
+        img {}
+    }
+
+    &__category {
+        @extend %category-styles;
+        // color: rgba($color-text, .8);
+        // margin-bottom: .5rem;
+        // font-size: 0.8rem;
+    }
+}

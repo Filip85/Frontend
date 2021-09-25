@@ -1,0 +1,24 @@
+body {
+    background-image: url('food.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    overflow-y: hidden;
+}
+
+.recipe-card {
+    width: 700px;
+    margin: 130px auto;
+    background-color: rgba(152, 131, 93, 0.8);
+    padding: 20px;
+}
+
+.img-cooking {
+    float: left;
+    margin-right: 10px;
+    width: 140px;
+}
+
+.intro-part {
+    margin-bottom: 80px;
+}

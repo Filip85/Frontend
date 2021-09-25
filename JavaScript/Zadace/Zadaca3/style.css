@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    margin: auto;
+}
+
+header {
+    background-color: #2F1847;
+    color: white;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 80vh;
+    background-color: #C62E65;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 20rem;
+    height: 2.2rem;
+}
+
+button {
+    width: 60px;
+    height: 2.2rem;
+    background-color: #F9B3D1;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.todo-app {
+    margin-top: 8rem;
+}
+.todo-list {
+    margin-top: 2rem;
+}
+
+table {
+    width: 20.5rem;
+
+}
+
+td {
+    font-size: 20px;
+}
+
+table tr {
+    margin-bottom: 0;
+    font-size: 15px;
+    height: 2.2rem;
+    background-color: #de93ee;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #C62E65;
+}
+
+img {
+    width: 1rem;
+    padding-left: 5px;
+}
+
+
+.checkbox-hidden {
+    visibility: hidden;
+}
+
+.checkbox-visible {
+    visibility: visible;
+}
+
+span {
+    position: relative;
+    right: 0.5em;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+.strike-through {
+    text-decoration: line-through
+}

@@ -1,0 +1,48 @@
+.bg-green {
+    // @include section-styles($url: "../assets/apex-hero.jpg", $border: true);
+    // padding: 170px 0 165px;
+    // padding: 65px 0;
+    // height: 650px;
+    background-color: black;
+    // background-image: url(../assets/bgGreen.png);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // width: 100%;
+    // height: 0;
+    // padding-top: 66.64%; /* (img-height / img-width * container-width) */
+    //             /* (853 / 1280 * 100) */
+}
+
+.bg-news {
+    @include section-styles($url: "../assets/apex-section-bg-homepage-news-xl.jpg.adapt.1920w.jpg", $border: true);
+    padding: 80px 0 90px;
+}
+
+.bg-seer {
+    @include section-styles($url: "../assets/apex-section-bg-battle-royale-video-xl.jpg.adapt.1920w.jpg", $border: true);
+    padding: 245px 0 250px;
+}
+
+.bg-legends {
+    @include section-styles($url: "../assets/apex-section-bg-homepage-news-xl.jpg.adapt.1920w.jpg", $border: true);
+    padding: 75px 0 100px;
+}
+
+.bg-free {
+    @include section-styles($url: "../assets/apex-section-bg-emergence-season-play-for-free-dark-purple-xl.jpg.adapt.1920w.jpg", $border: true);
+    padding: 75px 0 25px;
+}
+
+.section {
+    &__main {
+        &-title {
+            text-align: center;
+            padding-bottom: 40px;
+            color: $color-text-secondary;
+
+            &-alt {
+                color: $color-text-primary;
+            }
+        }
+    }
+}

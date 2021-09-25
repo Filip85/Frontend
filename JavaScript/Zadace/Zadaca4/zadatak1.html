@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="color-setting">
+            <div class="input-button-position input-part">
+                <div>
+                    <label for="changeBy">Change by</label>
+                    <label for="opacity">Opacity</label>
+                </div>
+                <div>
+                    <input minlength="0" maxlength="255" class="change-by" type="number" id="opacity" name="opacity" value="">
+                    <input minlength="0" maxlength="1" step=".01" class="opacity" type="number" id="changeBy" name="changeBy" value="">
+                </div>
+            </div>
+            <div class="color-setting-button-part">
+                <div class="input-button-position">
+                    <div class="buttom-labels">
+                        <label for="red">Red</label>
+                        <label for="green">Green</label>
+                        <label for="blue">Blue</label>
+                    </div>
+                    <div>
+                        <button type="" id="red" name="red" value="red+">+</button>
+                        <button type="" id="green" name="green" value="green+">+</button>
+                        <button type="" id="blue" name="blue" value="blue+">+</button>
+                    </div>
+                    <div>
+                        <button type="" id="red2" name="red2" value="red-">-</button>
+                        <button type="" id="green2" name="green2" value="green-">-</button>
+                        <button type="" id="blue2" name="blue2" value="blue-">-</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="color-showing">
+            <div class="mixed-color-div">
+
+            </div>
+            <div class="randomize">
+                <button class="randomize-button">Randomize</button>
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

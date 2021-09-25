@@ -1,0 +1,109 @@
+$weights: light, normal, bold;
+
+$colors: (
+    'red': #e53935,
+    'green': #43a047,
+    'blue': #1e88e5,
+);
+
+
+/*IF-ELSE zadatak*/
+@mixin color($input: "dark") {
+    @if $input == "dark" {
+        background-color: red;
+        color: black;
+    }
+    @else {
+        background-color: white;
+    }
+}
+
+@mixin layout($grid: true) {
+    @if $grid {
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        grid-auto-rows: 100px;
+    }
+    @else {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/*EACH zadatak*/
+@each $weight in $weights {
+    .font-#{$weight} {
+        font-weight: $weight;
+    }
+}
+
+@each $key, $color in $colors {
+    .background-#{$key} {
+        background-color: $color;
+    }
+}
+
+
+/*FOR zadatak*/
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: 1rem * (7 - $i);
+    }
+}
+
+/*WHILE zadatak*/
+
+$count: 1;
+
+@while $count <= 5 {
+
+    .position-#{$count} {
+        position: absolute;
+        top: $count * 10%;
+    }
+
+    $count: $count + 1;
+}
+
+/*FUNCTION zadatak*/
+
+@function sum($num1, $num2) {
+    @return $num1 + $num2;
+}
+
+@function largest($numbers...) {
+    $max: 0;
+
+    @each $number in $numbers {
+        @if $number > $max {
+            $max: $number;
+        }
+    }
+
+    @return $max;
+}
+
+/*BUILT-IN FUNCTIONS zadatak*/
+
+$colors: (
+    'primary': dodgerblue,
+    'secondary': green,
+    'danger': tomato,
+);
+
+@each $key, $color in $colors {
+    .button-#{$key} {
+        background-color: $color;
+        color: white;
+
+        &:hover {
+            background-color: lighten($color, 10);
+        }
+
+        &:active {
+            background-color: darken($color, 10);
+        }
+    }
+}

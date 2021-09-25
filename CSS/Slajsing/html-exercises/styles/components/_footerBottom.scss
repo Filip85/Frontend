@@ -1,0 +1,52 @@
+.footer {
+    a {
+        color: $color-text;
+        list-style: none;
+        opacity: 1;
+    }
+
+    &__bottom {
+        &--list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &--title {
+            margin-bottom: 45px;
+        }
+
+        &--trademark {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        &--CA {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        &--item {
+            padding-right: 15px;
+
+            a {
+                font-size: 0.7em;
+                list-style: none;
+                opacity: 1;
+                text-decoration: none;
+            }
+        }
+    }
+
+    // @include mq-up('desktop') {
+
+    //     &__bottom {
+    
+    //         // &--list {
+    //         //     display: flex;
+    //         //     // justify-content: center;
+    //         // }
+    //     }
+    
+    // }
+}

@@ -1,0 +1,8 @@
+.button {
+    
+    &__black {
+        @include button($color-white, $color-black);
+    }
+
+
+}

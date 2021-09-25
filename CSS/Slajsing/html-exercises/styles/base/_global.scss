@@ -1,0 +1,64 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    font-family: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    color: $color-text;
+    background-color: rgba($color-bg, .3);
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  ul {
+      list-style: none;
+  }
+
+  header {
+      background-color: black;
+      position: relative;
+  }
+
+  .logo {
+      padding: 5px 0;
+  }
+
+  a {
+      text-decoration: none;
+  }

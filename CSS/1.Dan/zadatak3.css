@@ -1,0 +1,93 @@
+body {
+    background-color: lightgrey;
+    width: 600px;
+}
+
+ul.brojevi {
+    list-style-type: circle;
+    padding-left: 50px;
+    margin: 50px;
+}
+
+ol.voca {
+    list-style-type: upper-roman;
+    padding-left: 50px;
+    margin: 50px;
+}
+
+li {
+    letter-spacing: 2px;
+    padding: 8px 10px;
+}
+
+ol li {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: violet;
+}
+
+a:hover {
+    color: green;
+}
+
+a:focus {
+    color: tomato;
+}
+
+p::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+blockquote::before {
+    content:"";
+    background: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    color: violet;
+    border-bottom: 2px solid black;
+}
+
+blockquote::after {
+    content:"ovo je poslije blockquote";
+    color: teal;
+    border-bottom: 2px solid black;
+}
+
+div {
+    text-transform: uppercase;
+}
+
+body .neki-div {
+    margin: 50px auto;
+}
+
+
+/*BOX-SIZING*/
+.neki-div {
+    width: 400px;
+    height: 200px;
+    border: 5px solid black;
+}
+
+.neki-div div {
+    width: 100%;
+    border: 5px solid blue;
+    box-sizing: border-box;
+    padding: 45px;
+    
+}
+
+.neki-div > p {
+    width: 200px;
+    font-size: 15px;
+    margin: auto;
+}
+

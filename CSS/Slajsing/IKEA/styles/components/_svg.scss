@@ -1,0 +1,69 @@
+svg {
+    // fill: gray;
+    width: 1.2em;
+    height: 1.1em;
+    transform: rotate(360deg);
+    vertical-align: bottom;
+  }
+
+.position {
+    position: absolute;
+    top: 22%;
+    left: 3%;
+
+    &-alt {
+      position: absolute;
+      top: 50%;
+      right: 2%;
+    }
+}
+
+.heart {
+  display: block;
+  margin-left: auto;
+}
+
+.circle {
+  fill: white;
+}
+
+.small {
+  width: 0.8em;
+  height: 0.8em;
+  vertical-align: baseline;
+
+  &-alt {
+    position: absolute;
+    right: 0;
+    top: 50%
+  }
+
+}
+
+.medium {
+  width: 0.9;
+  height: 0.9;
+
+  &-alt {
+    position: absolute;
+    top: 50%
+  }
+}
+
+.big {
+  width: 2em;
+  height: 2em;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.space {
+  margin-left: 30px;
+}
+
+.svg {
+  &__white {
+    fill: white;
+  }
+}
+

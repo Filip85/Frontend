@@ -1,0 +1,35 @@
+.svg {
+    vertical-align: middle;
+
+    &-wrapper {
+        width: 220px;
+        height: 55px;
+        padding-bottom: 35px;
+    }
+
+    &__benefit {
+        width: 1em;
+        height: 1em;
+        fill: $color-white;
+    }
+
+
+    &__arrow {
+        width: 0.6em;
+        height: 0.6em;
+        color: $color-secondary;
+    }
+
+    &__play {
+        width: 240px;
+        height: 100px;
+    }
+
+    &__social {
+        width: 1.5em;
+        height: 1.5em;
+
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+}

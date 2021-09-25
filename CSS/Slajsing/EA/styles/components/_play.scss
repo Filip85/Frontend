@@ -1,0 +1,28 @@
+.play {
+    color: $color-white;
+    max-width: 500px;
+
+    position: block;
+    // text-align: center;
+    padding: 35px;
+
+    margin: auto;
+
+    &__title {
+        font-size: 3em;
+        padding: 0px 0 25px;
+    }
+
+    &__save {
+        font-size: 1em;
+        padding-bottom: 30px;
+    }
+
+    @include mq-up('desktop') {
+        position: absolute;
+        top: 18%;
+        left: 24%;
+
+        background-color: transparent;
+    }
+}

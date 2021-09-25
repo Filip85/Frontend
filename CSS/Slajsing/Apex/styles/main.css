@@ -1,0 +1,443 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button:hover {
+  padding: 10px;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Agency FB", arial;
+  font-size: 16px;
+  background-color: #1db11d;
+  color: white;
+  line-height: 1.5;
+}
+
+*, *:before, *:after {
+  font-family: inherit;
+  box-sizing: inherit;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 55px;
+}
+@media (min-width: 993px) {
+  .container-alt {
+    display: flex;
+  }
+}
+
+.article {
+  text-align: center;
+}
+.article__content {
+  text-align: left;
+  max-width: 500px;
+  line-height: 1.3;
+}
+.article__logo {
+  padding-bottom: 15px;
+  width: 230px;
+  height: 155px;
+}
+.article__title {
+  font-size: 2em;
+  padding-bottom: 20px;
+  color: black;
+}
+.article__title-alt {
+  color: white;
+}
+.article__description {
+  font-size: 1.2em;
+  padding-bottom: 20px;
+  opacity: 0.84;
+  color: black;
+}
+.article__description-alt {
+  color: white;
+}
+.article__image-wrapper {
+  max-width: 544px;
+  margin: auto;
+}
+@media (min-width: 689px) {
+  .article__title {
+    font-size: 2.6em;
+  }
+  .article__description {
+    font-size: 1.4em;
+  }
+}
+.article__free {
+  width: 198px;
+  height: 55px;
+  background-color: transparent;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 3px;
+  border: 2px solid white;
+  margin: 15px 0 90px;
+}
+.article__free:hover {
+  transition: all 120ms;
+  cursor: pointer;
+}
+.article__trailer {
+  width: 248px;
+  height: 55px;
+  background-color: transparent;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 3px;
+  border: 2px solid white;
+}
+.article__trailer:hover {
+  transition: all 120ms;
+  cursor: pointer;
+}
+.article__seer {
+  width: 160px;
+  height: 55px;
+  background-color: transparent;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 3px;
+  border: 2px solid white;
+}
+.article__seer:hover {
+  transition: all 120ms;
+  cursor: pointer;
+}
+.article__legends {
+  width: 100%;
+  height: 55px;
+  background-color: red;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 3px;
+  border: 2px solid red;
+  display: block;
+}
+.article__legends:hover {
+  transition: all 120ms;
+  cursor: pointer;
+}
+.article__small {
+  opacity: 0.7;
+}
+@media (min-width: 689px) {
+  .article__title {
+    font-size: 2.6em;
+  }
+  .article__description {
+    font-size: 1.4em;
+  }
+  .article__legends {
+    width: 230px;
+    height: 55px;
+    background-color: red;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 3px;
+    border: 2px solid red;
+  }
+  .article__legends:hover {
+    transition: all 120ms;
+    cursor: pointer;
+  }
+}
+
+.bg-green {
+  background-color: black;
+}
+
+.bg-news {
+  background-image: url("../assets/../assets/apex-section-bg-homepage-news-xl.jpg.adapt.1920w.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  padding: 80px 0 90px;
+}
+
+.bg-seer {
+  background-image: url("../assets/../assets/apex-section-bg-battle-royale-video-xl.jpg.adapt.1920w.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  padding: 245px 0 250px;
+}
+
+.bg-legends {
+  background-image: url("../assets/../assets/apex-section-bg-homepage-news-xl.jpg.adapt.1920w.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  padding: 75px 0 100px;
+}
+
+.bg-free {
+  background-image: url("../assets/../assets/apex-section-bg-emergence-season-play-for-free-dark-purple-xl.jpg.adapt.1920w.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  padding: 75px 0 25px;
+}
+
+.section__main-title {
+  text-align: center;
+  padding-bottom: 40px;
+  color: black;
+}
+.section__main-title-alt {
+  color: white;
+}
+
+.play {
+  text-align: center;
+}
+.play__content {
+  max-width: 400px;
+  margin: auto;
+  line-height: 1.3;
+}
+.play__logo {
+  padding-bottom: 15px;
+  width: 230px;
+  height: 225px;
+}
+.play__title {
+  font-size: 2.3em;
+  padding-bottom: 20px;
+}
+.play__description {
+  font-size: 1.2em;
+  padding-bottom: 20px;
+  opacity: 0.84;
+}
+.play__description-alt {
+  color: black;
+}
+.play__image-wrapper {
+  max-width: 544px;
+  margin: auto;
+}
+.play__free {
+  width: 100%;
+  height: 55px;
+  background-color: transparent;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 3px;
+  border: 2px solid white;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+.play__free:hover {
+  transition: all 120ms;
+  cursor: pointer;
+}
+.play__trailer {
+  width: 100%;
+  height: 55px;
+  background-color: transparent;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 3px;
+  border: 2px solid white;
+  margin-bottom: 50px;
+}
+.play__trailer:hover {
+  transition: all 120ms;
+  cursor: pointer;
+}
+.play__seer {
+  width: 160px;
+  height: 55px;
+  background-color: transparent;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 3px;
+  border: 2px solid white;
+}
+.play__seer:hover {
+  transition: all 120ms;
+  cursor: pointer;
+}
+.play__legends {
+  width: 230px;
+  height: 55px;
+  background-color: red;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 3px;
+  border: 2px solid red;
+  display: block;
+}
+.play__legends:hover {
+  transition: all 120ms;
+  cursor: pointer;
+}
+.play__small {
+  opacity: 0.7;
+}
+@media (min-width: 689px) {
+  .play__content {
+    max-width: 500px;
+  }
+  .play__description {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 993px) {
+  .play__content {
+    position: absolute;
+    top: 15%;
+    left: 21.5%;
+  }
+  .play__description {
+    font-size: 1.5em;
+  }
+  .play__free {
+    width: 198px;
+    height: 55px;
+    background-color: transparent;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 3px;
+    border: 2px solid white;
+  }
+  .play__free:hover {
+    transition: all 120ms;
+    cursor: pointer;
+  }
+  .play__trailer {
+    width: 248px;
+    height: 55px;
+    background-color: transparent;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 3px;
+    border: 2px solid white;
+  }
+  .play__trailer:hover {
+    transition: all 120ms;
+    cursor: pointer;
+  }
+}
+
+.card {
+  background-color: #161616;
+  border-bottom: 8px solid red;
+  line-height: 1.4;
+}
+.card__content {
+  margin: 20px 25px 170px;
+}
+.card__game {
+  font-size: 0.98em;
+  color: red;
+  padding: 0 10px 10px 0;
+  display: inline-block;
+}
+.card__title {
+  font-size: 1.5em;
+  padding-bottom: 15px;
+}
+.card__description {
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+.card a {
+  display: block;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 585px;
+  gap: 20px;
+}
+@media (min-width: 689px) {
+  .card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

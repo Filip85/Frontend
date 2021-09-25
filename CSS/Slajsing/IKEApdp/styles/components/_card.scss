@@ -1,0 +1,41 @@
+.card {
+
+    border-bottom: 2px solid rgba($color-black, 0.2);
+    padding: 0.5em;
+
+    a {
+        display: block;
+    }
+
+    &__content {
+        height: 120px;
+    }
+
+    &__status {
+        display: block;
+        padding-bottom: 4px;
+        font-size: 0.95em;
+        color: $color-pink;
+    }
+
+    &__title {
+        padding-bottom: 6px;
+        font-weight: map-get($font-weights, "bold");
+    }
+
+    &__description {
+        padding-bottom: 8px;
+    }
+
+    &__price {
+        display: block;
+        padding-bottom: 20px;
+    }
+}
+
+// article::after {
+//     content: "";
+//     width: 10px;
+//     height: 1px;
+//     background: chocolate;
+// }

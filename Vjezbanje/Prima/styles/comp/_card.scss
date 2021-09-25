@@ -1,0 +1,53 @@
+.card {
+    position: relative;
+    cursor: pointer;
+
+    &__name {
+        position: absolute;
+        bottom: 0;
+        padding: 35px 25px;
+        font-size: 1.8em;
+        color: transparentize($color-white, 0.1);
+    }
+
+    &__action {
+        border: 8px solid $color-gray;
+        max-width: 625px;
+        height: 320px;
+        margin: auto 0;
+        position: relative;
+    }
+
+    &__catalog {
+        padding: 60px 0;
+        background-color: $color-gray;
+    }
+    
+    &__features {
+        text-align: center;
+        font-size: 0.8em;
+        color: $color-white;
+
+        span {
+            display: block;
+            padding-top: 3px;
+            padding-bottom: 50px;
+        }
+
+        svg {
+            fill: white
+        }
+    }
+
+    &__image {
+
+        &-wrapper {
+            display: flex;
+        }
+
+        &-alt {
+            width: 190px;
+        }
+    }
+
+}

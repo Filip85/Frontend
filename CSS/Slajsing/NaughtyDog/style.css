@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/************
+1. GENERAL RULES
+***********************/
+
+button {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/************
+2. HEADER -> NAVBAR
+***********************/
+
+.header a.link {
+    color: black;
+}
+
+a.logo {
+     margin-top: 50px;
+ }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 0 1em;
+    height: 110px;
+    background-color: #f6f6f6;
+    position: sticky;
+}
+
+.header-nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 760px;
+}
+
+.header-nav-list .has-dropdown svg {
+    height: 0.5em;
+    transform: rotate(90deg);
+    padding-bottom: 5px;
+}
+
+.header-nav-list .has-dropdown:focus-within svg{
+    transform: rotate(270deg);
+}
+
+.has-dropdown {
+    position: relative;
+}
+
+.has-dropdown:focus-within .dropdown{
+    display: block;
+    background-color:  aqua;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    padding: 15px 80px 15px 25px;
+    background-color: white;
+}
+
+.header-company-list a.link {
+}
+
+/* a:hover {
+    background-color: yellow;
+} */
+
+.header-button {
+    height: 40px;
+    width: 110px;
+    background-color: black;
+    color: white;
+}
+
+
+/**************
+3. MAIN 
+************************/
+
+main {
+    position: relative;
+    height: 630px;
+    background-image: url("https://s3.us-east-1.amazonaws.com/nd.images/uploads/2014_12_03_Uncharted4_PSXBlog.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    z-index: -1;
+}
+
+.main-news {
+    position: absolute;
+    bottom: 0;
+    height: 205px;
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+    width: 100vw;
+}
+
+.news-title {
+    width: 830px;
+    margin: auto;
+    padding-top: 0.7em;
+}
+
+.news-title h2 {
+    font-size: 35px;
+    color: white;
+}
+
+.news-title p {
+    font-size: 20px;
+    color: white;
+}
+

@@ -1,0 +1,83 @@
+.more {
+    position: relative;
+    
+
+    &__text {
+        line-height: 1.5;
+        width: 300px;
+        z-index: 3;
+
+        &-wrapper {
+            position: absolute;
+            top: 80%;
+            left: 0;
+            right: 0;
+            // top: 80%;
+            margin: auto;
+            z-index: 10;
+            width: 400px;
+            height: auto;
+            text-align: center;   
+            background-color: $color-white;  
+            box-shadow: 0 0 10px 0px $color-gray;
+            padding: 20px;
+        }
+    }
+    
+    &__title {
+        font-size: 1em;
+    }
+
+    &__description {
+        color: transparentize($color-black, 0.6);
+        padding: 10px 0;
+        font-size: 0.8em;
+    }
+
+    &__button {
+        margin: auto;
+    }
+
+    &__image {
+        margin-left: auto;
+        position: relative;
+    }
+
+    @include mq-up("tablet") {
+        display: flex;
+
+        &__title {
+            font-size: 1.8em;
+        }
+
+        &__text {
+            line-height: 1.5;
+            width: 400px;
+            // background-color: aqua;
+            position: relative;
+    
+            &-wrapper {
+                position: absolute;
+                top: 32%;
+                left: 15%;
+                margin: 0;
+                width: 250px;
+                height: auto;
+                padding: 0;
+                text-align: left;
+                box-shadow: none;
+                padding: 0;
+                box-shadow: 0 0 0 0;
+            }
+        }
+
+        &__description {
+            padding: 40px 0;
+            font-size: 1em;
+        }
+
+        &__button {
+            margin: 0;
+        }
+    }
+}

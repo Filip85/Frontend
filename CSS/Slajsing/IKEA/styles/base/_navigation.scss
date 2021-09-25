@@ -1,0 +1,21 @@
+.navigation {
+    display: flex;
+
+    padding-top: 20px;
+    // width: 100%;
+    
+    flex-direction: row;
+
+    a {
+        text-decoration: none;
+    }
+
+
+    @include mq-down('tablet') {
+        justify-content: space-between;
+    }
+}
+
+// .navigation :nth-child(1) {
+//     order: 2;
+// }

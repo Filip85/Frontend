@@ -1,0 +1,104 @@
+body {
+    width: 770px;
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color-orange: #d67632;
+    --bg-color-red: #fa3839;
+    --date-color: #a155e7;
+    --p-color-green: #47a347;
+    --abbr-dot-color: #87cefa;
+    --q-color-footer: #5fb6b6;
+    --a-last-color: #5baeff;
+    --dd-color: #8eb2f2;
+}
+
+address {
+    line-height: 1.35;
+}
+
+strong, dt {
+    color: var(--bg-color-orange, black);
+}
+
+ address a:first-of-type {
+    color: var(--bg-color-red, black);
+}
+
+address a {
+    color: var(--date-color, black);
+}
+
+.date-time {
+    margin: 1rem 0;
+}
+
+hr {
+    margin-top: -1rem;
+    height: 0.1rem;
+    background-color:var(--bg-color-orange, black);;
+}
+
+article p:first-of-type {
+    color: var(--p-color-green);
+}
+
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022";
+    color: var(--abbr-dot-color, black);
+    /* width: 100px; */
+    margin-left: -1.5rem;
+    margin-right: 0.5rem;
+}
+
+.starting-dates {
+    color: var(--date-color, black)
+}
+
+sup {
+    color: var(--abbr-dot-color, black);
+}
+
+abbr {
+    background-color: var(--abbr-dot-color, black);
+    text-decoration: none 
+}
+
+.article3 hr:not(:first-of-type) {
+    margin-top: 1rem;
+    height: 0.3rem;
+    background-color: var(--bg-color-red, black)
+}
+
+.article3 hr:last-of-type {
+    margin-top: 3rem;
+}
+
+dl dt {
+    font-weight: bold;
+}
+
+dl dd {
+    color: var(--dd-color, black);
+    margin: 0.5rem 0 1.5rem 2rem;
+    font-family: cursive;
+    font-size: 0.9rem ;
+}
+
+a:last-of-type {
+    color: var(--a-last-color, black);
+}
+
+footer q {
+    color: var(--q-color-footer);
+    border-bottom: 0.2rem double var(--q-color-footer, black);
+    quotes: """ """;
+}

@@ -1,0 +1,43 @@
+li {
+  list-style: none;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+}
+.list__item {
+  width: 100px;
+  cursor: pointer;
+}
+
+svg {
+  width: 0.8em;
+  height: 0.8em;
+  transition: transform 0.2s ease-in;
+}
+
+.has-dropdown {
+  position: relative;
+}
+
+.has-dropdown:focus-within .dropdown {
+  opacity: 1;
+  transform: translateY(0);
+}
+.has-dropdown:focus-within svg {
+  transform: rotate(180deg);
+}
+
+.dropdown {
+  position: absolute;
+  transform: translateY(-100%);
+  pointer-events: none;
+  opacity: 0;
+  transition: transform 0.2s ease-in, opacity 0.2s;
+}
+.dropdown__list {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

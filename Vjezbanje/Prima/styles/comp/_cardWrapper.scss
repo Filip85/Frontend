@@ -1,0 +1,32 @@
+.card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0 30px;
+
+    &-features {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 60px;
+    }
+
+    &-action {
+        grid-template-columns: 1fr;
+    }
+    
+
+    @include mq-up("tablet") {
+        grid-template-columns: repeat(4, 1fr);
+
+        &-form {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &-action {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &-features {
+            grid-template-columns: repeat(8, 1fr);
+        }
+    }
+}

@@ -1,0 +1,240 @@
+:root {
+    --bg-color: #D9F0FF;
+    --a-hover-color: #94caee;
+    --text-color: white;
+    --header-bg-color: #6F73D2;
+}
+
+body {
+    font-size: 20px;
+    color: black;
+    background-color: var(--bg-color);
+    color: white;
+    overflow-x: hidden;
+}
+
+
+/**************
+1. GENERAL STYLES
+********************/
+.container {
+    margin: 0 100px 0;
+    height: 100%;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+p {
+    line-height: 1.2em;
+}
+
+li {
+    font-size: 0.8em;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--a-hover-color);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/**************
+2. NAVIGATION AND HEADER
+*******************/
+
+header {
+    background-color: var(--header-bg-color);
+    height: 7vh;
+}
+
+.primary-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.primary-navigation-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 31.25em;
+}
+
+.burger {
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.burger div {
+    width: 20px;
+    height: 5px;
+    margin-top: 1px;
+    background-color: var(--text-color);
+}
+
+
+/*******************
+3. MAIN SECTION 1
+*************************/
+
+.cute-img-container {
+    max-height: 116vh;
+}
+
+.fun-fact-container {
+    position: relative;
+    height: 230px;
+    margin-top: -4px;
+}
+
+.fun-fact-item {
+    width: 33%;
+    background-color: #6F73D2;
+    height: 115px;
+    text-align: center;
+    padding-top: 115px;
+    transition: height 1s, padding 1s;
+    border-radius: 10px;
+}
+
+.fun-fact-item h2 {
+    padding-bottom: 1em;
+}
+
+.fun-fact-list {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.list-item {
+    padding-bottom: 1.1em;
+}
+
+.prehistoric-card {
+    position: absolute;
+    bottom: 0;
+}
+
+.protected-card {
+    position: absolute;
+    left: 33.5%;
+    bottom: 50%;
+}
+
+.continent-card {
+    position: absolute;
+    right: 0%;
+    bottom: 100%;
+}
+
+.fun-fact-item:hover {
+    height: 18.5em;
+    padding-top: 1em;
+}
+
+.fun-fact-item:hover .fun-fact-list {
+    opacity: 1;
+}
+
+.about-animals {
+    margin: 2em 0;
+    color: black;
+}
+
+/*************
+??. MOBILE
+********************/
+
+@media only screen and (max-width: 1100px) {
+    .container {
+        margin: 0 50px 0;
+        height: 100%;
+    }
+
+    .primary-navigation-list {
+        width: 22em;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        position: relative;
+    }
+
+    .primary-navigation-list{
+        position: absolute;
+        top: 7vh;
+        right: 0;
+        flex-direction: column;
+        width: 50%;
+        height: 93vh;
+        transform: translateX(110%);
+        transition: transform 2s;
+        z-index: 1;
+        background-color: #7681B3;
+        opacity: 0.9;
+    }
+
+    .primary-navigation-item {
+        padding: 3.125em;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .show-nav-list {
+        transform: translateX(0);
+    }
+
+    .fun-fact-item {
+        width: 50%;
+        background-color: #6F73D2;
+        height: 115px;
+        text-align: center;
+        padding-top: 115px;
+        
+    }
+
+    .fun-fact-item:hover {
+        height: 19.5em;
+        padding-top: 1em;
+    }
+
+    .fun-fact-container {
+        height: 460px;
+        margin-bottom: 260px;
+    }
+
+    .prehistoric-card {
+        position: absolute;
+        top: 0;
+    }
+    
+    .protected-card {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+    
+    .continent-card {
+        position: absolute;
+        left: 0%;
+        top: 100%;
+    }
+}

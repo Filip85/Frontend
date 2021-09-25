@@ -1,0 +1,73 @@
+@mixin mq-up($name) {
+    $min: map-get($grid, $name, 'min');
+
+    @media (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin mq-down($name) {
+    $max: map-get($grid, $name, 'max');
+
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin padding {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+@mixin button($fontSize, $paddingTB, $paddingLR, $backgroundColor, $color, $borderColor, $borderRadius) {
+    font-size: $fontSize;
+    padding: $paddingTB $paddingLR;
+    background-color: $backgroundColor;
+    color: $color;
+    border: 1px solid $borderColor;
+
+    @if $borderRadius > 0 {
+        border-radius: $borderRadius;
+    }
+
+    cursor: pointer;
+}
+
+@mixin display($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin cartItem {
+    display: block;
+    margin-bottom: 7px;
+}
+
+@mixin circle($paddingTB, $paddingLR, $width, $height, $borderRadius, $backgroundColor) {
+    padding: $paddingTB $paddingLR;
+    border: 1px solid rgba($color-black, 0.2);
+    height: $width;
+    width: $height;
+    border-radius: $borderRadius; 
+    background-color: $backgroundColor;
+}
+
+@mixin input($width, $border, $padding, $fontSize) {
+    min-width: $width;
+
+    @if $border == 0 {
+        border: 0;
+        border-bottom: 1px solid black;
+        padding-top: $padding;
+    }
+    @else {
+        // border: 1px solid black;
+        padding: $padding;
+        margin-top: 20px;
+        line-height: 30px;
+    }
+    
+    font-size: $fontSize;
+}

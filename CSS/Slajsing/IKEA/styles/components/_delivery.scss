@@ -1,0 +1,203 @@
+.delivery {
+    
+    a {
+        cursor: pointer;
+    }
+
+    &__title {
+        padding-bottom: 30px;
+    }
+
+    &__body {
+        // padding: 10px 70px 0;
+        margin-bottom: 35px;
+        display: block;
+
+        &-wrapper {
+            display: flex;
+            gap: 40px;
+            // justify-content: space-between;
+            border-bottom: 1px solid rgba($color-black, 0.2);
+        }
+    }
+
+    &__one {
+        content: "1";
+        @include circle(7.5px, 11.5px, 33px, 33px, 25px, transparent)
+    }
+
+    &__padding {
+        padding-bottom: 20px;
+
+        &-alt {
+            margin: 20px 0 5px 75px;
+        }
+    }
+
+    &__to {
+        display: block;
+        padding-bottom: 2px;
+    }
+
+    &__zipcode {
+        color: $color-text;
+        padding-right: 10px;
+    }
+
+    &__change {
+        color: $color-text;
+    }
+
+    &__bodyButtons {
+        margin-bottom: 20px;
+        border-bottom: 1px solid black;
+
+        &-alt {
+            width: 100%;
+            border: none;
+            margin-bottom: 0;
+        }
+    }
+
+    &__bodyButton {
+        border: 0;
+        background-color: transparent;
+        margin: 30px 0 10px;
+
+        &-wrapper {
+            display: inline-block;
+            position: relative;
+            margin-right: 10px;
+        }
+
+        &-active {
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 3px;
+                background-color: blue;
+                display: block;
+            }
+        }
+    }
+
+    &__information {
+        &-wrapper {
+            border: 2px solid hsl(212deg 74% 37%);
+            padding: 20px;
+            margin-bottom: 70px;
+
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__spanBlock{
+        display: block;
+        padding-bottom: 8px;
+    }
+
+    &__name {
+
+    }
+
+    &__deadline {
+        padding-bottom: 32px;
+    }
+
+    &__nextButton {
+        @include button(0.9em, 15px, 20px, hsl(212deg 74% 37%), white, hsl(212deg 74% 37%), 25px);
+        width: 100%;
+
+        &-alt {
+            @include button(0.9em, 15px, 20px, rgb(215, 215, 215), rgb(154, 151, 151), rgb(215, 215, 215), 25px);
+        }
+        
+    }
+
+    &__security {
+        display: block;
+        padding: 10px 0 35px;
+    }
+
+    &__footer {
+        // padding-bottom: 90px;
+    }
+
+    &__footerButton {
+        display: block;
+        width: 100%;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        font-size: 1.1em;
+        padding: 20px 0;
+        background-color: white;
+        cursor: pointer;
+        border: none;
+        // border-bottom: 1px solid rgba($color-black, 0.2);
+
+        &-wrapper {
+            border-bottom: 1px solid rgba($color-text, 0.1);
+        }
+
+        &-one {
+            &::before {
+                content: "2";
+                @include circle(5px, 0.5px, 33px, 33px, 25px, transparent)
+            }
+        }
+
+        &-two {
+            &::before {
+                content: "3";
+                @include circle(5px, 0.5px, 33px, 33px, 25px, transparent)
+            }
+        }
+
+        &-three {
+            &::before {
+                content: "4";
+                @include circle(5px, 0.5px, 33px, 33px, 25px, transparent)
+            }
+        }
+
+        // &:first-child {
+        //     border-top: 1px solid rgba($color-black, 0.2);
+        // }
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include mq-up('tablet') {
+
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: row;
+            
+
+            // &::before {
+            //     content: "dsds";
+            // }
+        }
+    }
+
+}
+
+// div:nth-child(1){
+//     transform: translate(142%, 42%);
+// }
+// div:nth-child(2){
+//   transform: translate(42%, 42%);
+//   border-radius: 0 0 50px 50px;
+// }
+// div:nth-child(3){
+//   transform: translate(242%, -58%);
+//   border-radius: 0 0 50px 50px;

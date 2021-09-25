@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 30vh;
+    background: #3993DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 70vh;
+    background: #E0ACD5;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    height: 27rem;
+    width: 27rem;
+    background: #F4EBE8;
+    margin-top: 2rem;
+}
+
+.position-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.how-long, .how-frequently, .money-amount{
+    height: 8.5rem;
+}
+
+.my-plan {
+    height: 27rem;
+    width: 27rem;
+    background: #6A3E37;
+}
+
+.category-title {
+    position: relative;
+    text-align: center;
+    color: white;
+    background: #6A3E37;
+}
+.how-long div:first-of-type {
+    bottom: 2rem;
+    width: 7rem;
+    height: 2.4rem;
+    padding: 0 0.3rem;
+}
+
+.how-frequently div:first-of-type {
+    bottom: 2rem;
+    width: 10rem;
+    height: 2.4rem;
+    padding: 0 0.3rem;
+}
+
+.money-amount div:first-of-type{
+    bottom: 2rem;
+    width: 7rem;
+    height: 2.2rem;
+}
+
+.input-div {
+    width: 100%;
+}
+
+.how-long .input-div {
+    margin-top: 1rem;
+}
+
+.checkbox-div {
+    width: 20%;
+    margin: auto;
+    margin-top: -2.5rem;
+}
+
+.checkbox-div input {
+    margin: 1rem 0;
+}
+
+button {
+    width: 100%;
+    height: 25%;
+    margin-top: 1.38rem;
+    font-size: 1rem;
+    background: #3993DD;
+    color: white;
+    border: none;
+}
+
+button:focus {
+    opacity: none;
+}
+
+.calculator p {
+    padding-top: 10px;
+}
+
+.my-plan p{
+    width: 50%;
+    background: #E0ACD5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem auto;
+    padding-bottom: 0.4em;
+}
+
+.my-plan span {
+    position: sticky;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    main{
+        margin-top: -2rem;
+        display: block;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        height: 100%;
+    }
+    .calculator {
+        margin: auto;
+    }
+    button {
+        margin-top: 2.5rem;
+    }
+    .my-plan {
+        padding-top: 1em;
+    }
+}

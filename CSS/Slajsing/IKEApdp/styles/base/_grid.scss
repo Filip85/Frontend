@@ -1,0 +1,18 @@
+//Grid variables
+$grid-breakpont-s-max: 688px;
+$grid-breakpont-m-min: 689px;
+$grid-breakpont-m-max: 992px;
+$grid-breakpont-l-min: 993px;
+
+$grid: (
+    'phone': (
+        'max': $grid-breakpont-s-max
+    ),
+    'tablet': (
+        'min': $grid-breakpont-m-min,
+        'max': $grid-breakpont-m-max
+    ),
+    'desktop': (
+        'min': $grid-breakpont-l-min
+    )
+);

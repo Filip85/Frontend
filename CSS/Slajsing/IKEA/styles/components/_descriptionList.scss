@@ -1,0 +1,34 @@
+.description {
+    gap: 80px;
+    padding-bottom: 20px;
+    color: $color-text;
+
+    a {
+        text-decoration: none;
+    }
+    
+    &__list {
+        font-size: 0.9em;
+        // margin-right: 120px;
+        // &-wrapper {
+        //     display: flex;
+        //     gap: 80px;
+        //     padding-bottom: 80px;
+        //     color: $color-text;
+        // }
+    }
+
+    &__title {
+        font-weight: map-get($font-weights, "bold");
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        padding-bottom: 25px;
+        color: tomato;
+    }
+
+    @include mq-up('tablet') {
+        display: flex;
+    }
+}

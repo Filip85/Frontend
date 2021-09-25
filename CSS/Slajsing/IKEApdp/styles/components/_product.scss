@@ -1,0 +1,132 @@
+.product {
+    margin-bottom: 40px;
+
+    &__wrapper {
+        display: block;  
+    }
+
+    &__more {
+        padding-top: 50px;
+        max-width: 500px;
+    }
+
+    &__title {
+        font-size: 1.4em;
+    }
+
+    &__description {
+        padding-bottom: 20px;
+    }
+
+    &__number {
+        padding: 2px 10px;
+        background-color: $color-text;
+        color: white;
+
+        &-title {
+            display: block;
+            padding: 15px 0;
+            color: $color-text;
+        }
+    }
+
+    &__information {
+        width: 65%;
+        margin-top: 20px;
+
+        &-button {
+            display: block;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+            background-color: white;
+            cursor: pointer;
+            border: none;
+            font-size: 1.3em;
+            border-bottom: 1px solid rgba($color-black, 0.2);
+            
+            // &:not(:last-of-type) {
+            //     border-top: 1px solid rgba($color-black, 0.2);
+            // }
+
+            &--alt {
+                border: none;
+                // padding: 20px 0 15px;
+                font-size: 0.9em;
+                border-bottom: 1px solid rgba($color-black, 0.2);
+                display: block;
+            }
+        }
+
+        &-alt {
+            width: 100%;
+        }
+    }
+
+    &__svg {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // margin-bottom: 40px;
+    }
+
+    &__packaging {
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    &__list {
+        margin-top: 20px;
+    }
+
+    &__similar {
+        padding-top: 75px;
+    }
+
+    &__other {
+        // overflow-x: scroll;
+        overflow-x: auto;
+
+        &-wrapper {
+            position: relative;
+        }
+    }
+
+    &__connected {
+        background-color: $color-button-blue;
+        color: white;
+        padding: 40px 20px 40px;
+        margin-bottom: 20px;
+
+        &-wrapper {
+            padding: 30px;
+        }
+
+        a {
+            display: block;
+            color: white;
+            padding-top: 10px;
+        }
+    }
+
+    &__name {
+        font-size: 1.7em;
+    }
+
+    @include mq-up('desktop') {
+        &__wrapper {
+            display: flex;  
+        }
+
+        &__more {
+            padding-top: 10px;
+        }
+
+        &__read {
+            display: block;
+            padding: 35px 0;
+        }
+    }
+}

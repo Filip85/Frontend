@@ -1,0 +1,15 @@
+@mixin mq-up($name) {
+    $min: map-get($grid, $name, 'min');
+
+    @media (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin mq-down($name) {
+    $max: map-get($grid, $name, 'max');
+
+    @media (max-width: $max) {
+        @content;
+    }
+}

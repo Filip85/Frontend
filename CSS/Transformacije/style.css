@@ -1,0 +1,260 @@
+/*1. zadatak*/
+/* .container {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    background-color: cornflowerblue;
+  }
+  
+  .shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-color: coral;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  } */
+
+/*2. zadatak*/
+
+/* .container {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    background-color: aliceblue;
+  }
+  
+  .shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-color: darkred;
+    transform: translate(-50%, -50%) rotate(45deg);
+  } */
+
+  /*3. zadatka*/
+
+  /* .container {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    background-color: ghostwhite;
+  }
+  
+  .shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-color: indigo;
+  }
+
+  .fifth-shape {
+    transform: translate(100%, 100%);
+  }
+
+  .fourth-shape {
+    transform: translate(-200%, 100%);
+  }
+
+  .third-shape {
+    transform: translate(-50%, -50%) rotate(45deg) scale(2.5);
+  }
+
+  .second-shape {
+    transform: translate(100%, -200%);
+  }
+
+  .first-shape {
+    transform: translate(-200%, -200%);
+  } */
+
+  /*4. zadataka*/
+
+/* .link {
+  color: #f57c00;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 300ms ease-in;
+}
+
+.link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #f57c00;
+  transform-origin: left;
+  transform: scale(0);
+  transition: all 300ms ease-in;
+}
+
+.link:hover {
+    color: blue;
+}
+
+
+.link:hover::after {
+    background-color: #bb4d00;
+    transform: scale(1);
+} */
+
+/*5. zadatak*/
+
+/* .cta {
+    position: relative;
+    background-color: transparent;
+    padding: 1em 2em;
+    border: 2px solid #0077c2;
+    color: #0077c2;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: rotate(0);
+    transition: all 500ms ease-in-out;
+  }
+  
+  .cta::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #0077c2;
+    transform-origin: top;
+    transform: scale(0);
+    transition: all 300ms ease-in-out 100ms;
+  }
+
+  .cta:hover {
+      border-color: #42a5f5;
+      transition: background-color 300ms ease-in-out;
+      transform: rotate(360deg);
+  }
+
+  .cta:hover::after {
+    background-color: #42a5f5;
+    transform: scale(1);
+  } */
+
+/*6. zadatak*/
+
+/* .loader {
+    display: flex;
+    justify-content: center;
+    width: 20em;
+  }
+  
+  .loader__dot {
+    width: 2em;
+    height: 2em;
+    background-color: #00897b;
+    border-radius: 50%;
+    animation: UpAndDown 750ms linear infinite;
+  }
+  
+  .loader__dot:not(:last-child) {
+    margin-right: 0.75em;
+  }
+
+  .loader__dot:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+  .loader__dot:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+  @keyframes UpAndDown {
+      0% {
+          transition: translateY(0);
+          background-color: #00897b;
+      }
+      50% {
+        transform: translateY(1em);
+        background-color: #4ebaaa;
+      }
+      100% {
+        transform: translateY(0);
+        background-color: #00897b;
+      }
+  } */
+
+/*7. zadatak*/
+
+.container {
+    background-color: #c62828;
+    animation: grow 3s linear forwards, growAgain 2s linear forwards 4s;
+  }
+  
+  .heading {
+    margin: 0;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    opacity: 0;
+    animation: trans 1s linear forwards 3s, headingg 6s linear 6s;
+  }
+
+  @keyframes grow {
+      0% {
+          height: 0%;
+          width: 0%;
+        }
+      25% {
+          height: 1rem;
+      }
+      50% {
+          width: 100%;
+          height: 1rem;
+      }
+      100% {
+          width: 100%;
+          height: 10rem;
+      }
+  }
+
+  @keyframes trans {
+        from {
+            transition: translateY(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transition: translateY(3rem);
+            opacity: 1;
+        }
+  }
+
+  @keyframes growAgain {
+      0% {
+          height: 10rem;
+      }
+
+    75% {
+        height: 20rem;
+    }
+    100% {
+        height: 20rem;
+        background-color: #8e0000;
+    }
+}
+
+@keyframes headingg { 
+    from {
+        transition: translateY(2.5em);
+    }
+    to {
+        transition: translateY(7.5em);
+    }
+}
+

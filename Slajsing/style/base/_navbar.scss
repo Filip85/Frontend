@@ -1,0 +1,44 @@
+@mixin nav-items($width) {
+    display: flex;
+    justify-content: space-between;
+    width: $width;
+  }
+
+// .navbar {
+//       position: relative;
+// }
+
+.primary-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-top: 20px;
+    border-bottom: 1px solid $color-grey;
+
+    &-items {
+        position: relative;
+        @include nav-items(495px);
+    }
+
+    &-profilItems {
+        @include nav-items(200px);
+    }
+
+    // &-account {
+    //     position: relative;
+    // } 
+}
+
+.secondary-navigation {
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid $color-grey;
+    position: relative;
+
+    &-dropdown {
+        .has-dropdown {
+            display: none;
+        }
+    }
+}

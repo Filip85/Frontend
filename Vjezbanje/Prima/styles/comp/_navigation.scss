@@ -1,0 +1,57 @@
+.navbar {
+
+    &__primary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.1px 0 30px;
+        border-bottom: 1px solid $color-gray;
+    }
+
+    &__secondray {
+        a {
+            color: $color-white;
+        }
+
+        svg {
+            fill: $color-white;
+        }
+
+        display: none;
+        padding: 20px 0;
+        background-color: $color-black;
+    }
+
+    &__icon {
+        display: inline;
+        padding: 15px 10px;
+        // border-right: 1px solid $color-gray;
+
+        &:last-of-type {
+            border-right: 1px solid $color-gray;
+        }
+
+        &-alt {
+            display: inline;
+        }
+    }
+
+    @include mq-up("tablet") {
+        &__icon {
+            padding: 20px 30px;
+            border-right: 1px solid $color-gray;
+        }
+    }
+
+    @include mq-up("desktop") {
+        &__secondray {
+            display: flex;
+        }
+        &__icon {
+            &-alt {
+                display: none;
+            }
+        }
+    }
+
+}

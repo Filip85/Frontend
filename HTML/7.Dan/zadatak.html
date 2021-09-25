@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Accesible Combobox</h1>
+
+    <form action="/action.html" method="GET" autocomplete="off">
+        <label for="comboboxInput" class="combobox-label">Select yout favourite fruit</label>
+
+        <div class="combobox-wrapper">
+
+            <div 
+                role="combobox" 
+                id="combobox" 
+                aria-expanded="false" 
+                aria-haspopup="listbox" 
+                aria-owns="comboboxListbox">
+                <input 
+                    type="text" 
+                    name="favouritefruit" 
+                    id="comboboxInput" 
+                    class="combobox-input"
+                    aria-autocomplete="list"
+                    aria-controls="comboboxListbox"
+                    aria-activedescendant=""
+                    />
+            </div>
+
+            <ul role="listbox" id="comboboxListbox" class="combobox-listbox hidden">
+                <li role="option" id="resultItem1" class="result" aria-selected="false">Apple</li>
+                <li role="option" id="resultItem2" class="result" aria-selected="false">Orange</li>
+                <li role="option" id="resultItem3" class="result" aria-selected="false">Banana</li>
+                <li role="option" id="resultItem4" class="result" aria-selected="false">Celery</li>
+                <li role="option" id="resultItem5" class="result" aria-selected="false">Carrot</li>
+                <li role="option" id="resultItem6" class="result" aria-selected="false">Squash</li>
+                <li role="option" id="resultItem7" class="result" aria-selected="false">Tomato</li>
+            </ul>
+        </div>
+
+        <div>
+            <button class="submit-btn" type="submit">Submit form</button>
+        </div>
+        </div>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

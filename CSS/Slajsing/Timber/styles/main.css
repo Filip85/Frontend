@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 55px;
+}
+
+.border {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  background-image: url("../assets/main-bg.jpeg");
+  background-color: #462b2a;
+  color: #f1f1f1;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+*, *:before, *:after {
+  font-family: inherit;
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+.logo::first-letter {
+  color: #4ab0c9;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.polygon {
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+.list__item {
+  padding: 0 15px;
+  border-left: solid 1px #f1f1f1;
+}
+.list__item:first-child {
+  border-left: none;
+}
+.list__item:hover {
+  color: #4ab0c9;
+  cursor: pointer;
+}
+
+.section {
+  text-align: center;
+}
+.section__header {
+  font-size: 3em;
+  border-bottom: 3px solid #4ab0c9;
+  width: 200px;
+}
+.section__title {
+  font-size: 1.4em;
+  padding-bottom: 10px;
+}
+.section__listen {
+  padding: 50px 0 75px;
+}
+.section__white {
+  background-color: white;
+  color: black;
+  padding: 90px 0 90px;
+}
+
+.svg__icon {
+  width: 1.5em;
+  height: 1.5em;
+  fill: white;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+@media (min-width: 689px) {
+  .card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card-wrapper--alt {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .card-wrapper--two {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+}
+
+.card {
+  text-align: center;
+  line-height: 1.4em;
+}
+.card-alt {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  text-align: right;
+  padding: 30px;
+  position: relative;
+}
+.card-alt:nth-child(odd) {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.card-alt::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: aqua;
+  background: linear-gradient(45deg, transparent, rgba(0, 0, 0, 0.2));
+}
+.card__number {
+  font-size: 1.5em;
+}
+.card__title {
+  font-size: 1em;
+  padding: 5px 0 1px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.card__position {
+  font-size: 0.7em;
+  color: rgba(0, 0, 0, 0.5);
+}
+.card__description {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.8);
+}
+.card__icon {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+  border: 1px solid black;
+}
+.card__icon span {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.card__image img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+}
+.card__content {
+  padding-right: 30px;
+}
+
+.business {
+  text-align: center;
+}
+.business__title {
+  padding-bottom: 10px;
+}
+.business__subtitle {
+  display: block;
+  padding-bottom: 40px;
+}
+.business__image {
+  width: 300px;
+  margin: auto;
+}
+
+.amazing {
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

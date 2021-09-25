@@ -1,0 +1,15 @@
+.burger {
+
+    .line1 {
+        height: 5px;
+        width: 30px;
+        margin-bottom: 3px;
+        background: $color-text;
+    }
+
+    @include mq-up('desktop') {
+        .burger {
+            display: none;
+        }
+    }
+}

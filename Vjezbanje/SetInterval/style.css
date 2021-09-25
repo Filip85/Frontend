@@ -1,0 +1,30 @@
+body {
+    background-color: green;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.start {
+    display: block;
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.playground {
+    margin: 40px;
+    position: relative;
+}
+
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}

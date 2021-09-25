@@ -1,0 +1,46 @@
+@mixin  section-styles($url, $border) {
+    background-image: url("../assets/#{$url}") ;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    // @if $border {
+    //     border-top: 1px solid lighten($color-bg, .5)
+    // }
+}
+
+@mixin mq-up($name) {
+    $min: map-get($grid, $name, 'min');
+
+    @media (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin mq-down($name) {
+    $max: map-get($grid, $name, 'max');
+
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin buttons($width, $height, $background, $border, $borderColor){
+    width: $width;
+    height: $height;
+    background-color: $background;
+    font-size: 1.2em;
+    color: $color-text-primary;
+    border-radius: 3px;
+
+    @if $border{
+        border: 2px solid $borderColor;
+    }
+
+    &:hover {
+        transition: all 120ms;
+        cursor: pointer;
+    }
+
+    @content;
+    
+}

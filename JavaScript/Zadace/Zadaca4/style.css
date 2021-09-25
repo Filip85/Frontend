@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    height: 100vh;
+}
+
+.color-setting {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.input-part {
+    width: 20rem;
+}
+.input-part div:first-of-type {
+    margin-bottom: 0.5rem;
+}
+
+.input-button-position {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+input {
+    margin-bottom: 1rem;
+}
+
+.color-setting-button-part {
+    margin: 2rem;
+    width: 20rem;
+}
+
+.input-button-position button {
+    margin-bottom: 0.2rem;
+}
+
+.buttom-labels {
+    margin-right: 1rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+/*Desni dio. tamo gdje se prikaže boja*/
+
+.color-showing {
+    width: 50%;
+}
+.randomize {
+    display: inline;
+    margin-top: 1rem;
+}
+
+.mixed-color-div {
+    width: 25rem;
+    height: 20rem;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+button {
+    width: 6rem;
+    height: 2rem;
+    margin-right: 1rem;
+    background-color: white;
+    border: 1px solid black
+}
+
+button:focus {
+    outline: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    section {
+      display: block;
+    }
+
+    .color-showing {
+        margin-left: 2.5rem;
+    }
+
+  }

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :root {
+            --input-gap: 1em;
+        }
+        html {
+            box-sizing: border-box;
+        }
+        *, *::before, *:after {
+            box-sizing: inherit;
+        }
+
+        body {
+            max-width: 500px;
+            margin: 40px auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        span.text {
+            line-height: 24px;
+        }
+        input, textarea, select {
+            width: 100%;
+            border: 3px solid;
+            font-size: 1rem;
+            padding: var(--input-gap);
+            border-radius: 5px;
+            outline: 0;
+            appearance: none;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 6em;
+            /* font-size: 2rem; */
+        }
+
+        label {
+            display: block;
+            margin: 0 0 0.2em;
+            user-select: none;
+        }
+
+        ::placeholder {
+            color: #b9b9b9;
+        }
+
+        .form-groupe-error-message {
+            margin-top: 0.5em;
+            color: darkred;
+        }
+
+        .form-group.has-error input,
+        .form-group.has-error textarea {
+            border-color: darkred;
+        }
+
+        .chekbox .icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            border: 2px solid;
+        }
+
+        .chekbox label {
+            padding-left: 28px;
+            /* padding-left: calc(var(--)); */
+            margin-bottom: 1em;
+            position: relative;
+        }
+
+        .chekbox [type="checkbox"] {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            /* width: 1px; */
+        }
+
+        [type="checkbox"]:checked ~ .icon {
+            background: dodgerblue;
+            box-shadow: 0 0 0 3px white inset;
+        }
+
+        select {
+            background-image: url("iconmonstr-angel-down-thin-32.png");
+            background-repeat: no-repeat;
+            background-size: 15px;
+            background-position: calc(100% - var(--input-gap));
+            background-position-y: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="John Doe">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="johndoe@gmail.com">
+    </div>
+    <div class="form-group has-error">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="********">
+        <div class="form-groupe-error-message">This field is required.</div>
+    </div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea name="" id="message" placeholder="your complaint..."></textarea>
+    </div>
+
+    <div>Kind:</div>
+    <div class="form-group chekbox">
+        <label for="human">
+            <span class="text">Human</span>
+            <input id="human" type="checkbox">
+            <span class="icon"></span>
+        </label>
+        <label for="animal">
+            <span class="text">Animal</span>
+            <input id="animal" type="checkbox">
+            <span class="icon"></span>
+        </label>
+    </div>
+
+    <div class="form-group">
+        <label for="selekcija">Odabir</label>
+        <select id="selekcija">
+            <option value="1">S 1</option>
+            <option value="2">S 2</option>
+            <option value="3">S 3</option>
+            <option value="4">S 4</option>
+        </select>
+    </div>
+
+</body>
+</html>

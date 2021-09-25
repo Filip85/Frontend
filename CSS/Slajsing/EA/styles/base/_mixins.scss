@@ -1,0 +1,37 @@
+@mixin button($width, $height, $paddingLR, $paddingTB, $fontSize, $color, $back, $border) {
+    // width: $width;
+    padding: $paddingTB $paddingLR;
+    font-size: $fontSize;
+    color: $color;
+    background-color: $back;
+    border: 2px solid $border;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        transition: padding 0.1s ease-in;
+        padding: $paddingTB + 2px $paddingLR + 2px;
+    }
+}
+
+@mixin mq-up($name) {
+    $min: map-get($grid, $name, 'min');
+
+    @media (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin mq-down($name) {
+    $max: map-get($grid, $name, 'max');
+
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin displayFlex() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

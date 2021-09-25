@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <figure>
+        <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
+            alt="Veliki donosaur s malim rukama" width="300" height="300" />
+        <figcaption>T-rex</figcaption>
+    </figure>
+
+    <!-- <img srcset="image-xs.png 640w,
+    image-sm.png 1024w,
+    image-l.png 1400w" size="(max-width: 640px) 640px,
+    (min-width: 640px and max-width: 1024px) 1024px,
+    (min-width: 1024px) 1400px" src="image-sm.png" alt="dsds"> -->
+
+    <picture>
+        <source 
+        media="(max-width: 640px)" 
+        srcset="picture-xs.jpg" />
+
+        <source 
+        media="(max-width: 1024px)" 
+        srcset="picture-sm.jpg" />
+
+        <source 
+        media="(min-width: 1025px)" 
+        srcset="picture-l.jpg" />
+
+        <img src="picture-l.jpg" alt="Big on" />
+    </picture>
+
+
+    <!-- <video controls
+    src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+    poster="1280px-Portrait_Of_A_Baboon.jpeg"
+    width="500"
+    height="500"
+    preload="metadata"
+    loop
+    muted> -->
+
+    <audio controls
+        src="html_multimedia-and-embedding_video-and-audio-content_viper.mp3"
+        autoplay
+        loop
+        >
+        <p>Jako glasno</p>
+    </audio>
+</body>
+
+</html>

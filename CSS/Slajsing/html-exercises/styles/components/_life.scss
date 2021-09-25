@@ -1,0 +1,24 @@
+.life {
+    @include section-styles($url: "bg-3.webp", $border: true);
+    line-height: 1.5;
+    height: 675px;
+    // max-width: 580px;
+
+    &__container {
+        max-width: 580px;
+        margin-top: 260px;
+    }
+
+    &__title {
+        font-size: 3em;
+    }
+
+    &__content {
+        opacity: 0.8;
+    }
+
+    a {
+        color: $color-text;
+        
+    }
+}

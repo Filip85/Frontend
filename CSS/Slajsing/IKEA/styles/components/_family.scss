@@ -1,0 +1,51 @@
+//Footer
+.family {
+    display: block;
+    text-align: center;
+
+    &__article {
+        width: 345px;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+
+    &__title {
+        color: black;
+    }
+
+    &__description {
+        margin: 25px 0;
+    }
+
+    &__signIn {
+        @include button(0.9em, 15px, 20px, black, $color-primary, transparent, 25px)
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        padding-bottom: 35px;
+    }
+
+    &__language {
+        @include button(0.9em, 15px, 20px, transparent, black, rgba($color-black, 0.2), 25px);
+        // @include display(center, center);
+        display: block;
+        margin: auto;
+    }
+
+    @include mq-up('tablet') {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        &__article {
+            margin: 0;
+        }
+
+        &__language {
+            margin: 0;
+        }
+    }
+}

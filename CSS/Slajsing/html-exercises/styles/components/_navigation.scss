@@ -1,0 +1,103 @@
+.primary-navigation {
+
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // padding: 10px 0;
+
+    .hidden {
+        display: block;
+        @include mq-up('desktop') {
+            display: none;
+        }
+
+        &-list {
+            display: none;
+            @include mq-up('desktop') {
+                display: inline-block
+            }
+        }
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    &--item {
+        margin-right: 10px;
+        display: inline-block;
+        @include mq-up('desktop') {
+            height: 100%;
+            margin-right: 20px;
+        }
+    }
+
+    &--span {
+        display: none;
+    }
+
+    @include mq-up('desktop') {
+        &--container {
+            width: 100%;
+            height: 40px;
+            position: absolute;
+            top: 100%;
+            background-color: rgba(black, 0.1);
+            z-index: 3;
+            padding-bottom: 10px;
+        }
+
+        &--wrapper {
+            display: flex;
+            justify-content: space-between;
+            // position: absolute;
+            color: $color-text;
+        }
+
+        .icon {
+            width: 18px;
+        }
+
+        .logo {
+            margin-right: auto;
+        }
+
+        &--list {
+            transform: translateX(0);
+            border-top: 1px solid lighten($color-bg, .5);
+            padding: 12px 0;
+            // opacity: 0.8;
+            @include display(600px);
+        }
+
+        .active {
+
+            &::after {
+                content: "";
+                width: 3.6em;
+                height: 3px;
+                background-color: $color-primary;
+                display: block;
+                position: absolute;
+                top: calc(100% - 2px);
+            }
+        }
+
+        &--span {
+            display: inline-block;
+        }
+    }
+}
+
+.line {
+    &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        height: 15px;
+        width: 1px;
+        margin-left: 0.4em;
+        background: #999;
+    }
+}

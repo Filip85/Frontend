@@ -1,0 +1,113 @@
+/*IF-ELSE zadatak*/
+/*EACH zadatak*/
+.font-light {
+  font-weight: light;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.background-red {
+  background-color: #e53935;
+}
+
+.background-green {
+  background-color: #43a047;
+}
+
+.background-blue {
+  background-color: #1e88e5;
+}
+
+/*FOR zadatak*/
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/*WHILE zadatak*/
+.position-1 {
+  position: absolute;
+  top: 10%;
+}
+
+.position-2 {
+  position: absolute;
+  top: 20%;
+}
+
+.position-3 {
+  position: absolute;
+  top: 30%;
+}
+
+.position-4 {
+  position: absolute;
+  top: 40%;
+}
+
+.position-5 {
+  position: absolute;
+  top: 50%;
+}
+
+/*FUNCTION zadatak*/
+/*BUILT-IN FUNCTIONS zadatak*/
+.button-primary {
+  background-color: dodgerblue;
+  color: white;
+}
+.button-primary:hover {
+  background-color: #51a9ff;
+}
+.button-primary:active {
+  background-color: #0077ea;
+}
+
+.button-secondary {
+  background-color: green;
+  color: white;
+}
+.button-secondary:hover {
+  background-color: #00b300;
+}
+.button-secondary:active {
+  background-color: #004d00;
+}
+
+.button-danger {
+  background-color: tomato;
+  color: white;
+}
+.button-danger:hover {
+  background-color: #ff8e7a;
+}
+.button-danger:active {
+  background-color: #ff3814;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,62 @@
+.containerr {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .containerr input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1em;
+    width: 1em;
+    background-color: #eee;
+  }
+  
+  .containerr:hover input ~ .checkmark2 {
+    background-color: #ccc;
+  }
+  
+  .containerr input:checked ~ .checkmark2 {
+    background-color: #2196F3;
+  }
+  
+  .checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .containerr input:checked ~ .checkmark2:after {
+    display: block;
+  }
+  
+
+  .containerr .checkmark2:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  

@@ -1,0 +1,21 @@
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+li:hover > a {
+    color: orange;
+}

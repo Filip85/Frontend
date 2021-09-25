@@ -1,0 +1,12 @@
+.logo {
+
+    &__wrapper {
+        width: 110px;
+    }
+
+    @include mq-up("tablet") {
+        &__wrapper {
+            min-width: 130px;
+        }
+    }
+}

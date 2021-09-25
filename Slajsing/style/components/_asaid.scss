@@ -1,0 +1,45 @@
+.sidebar {
+    position: sticky;
+    top: 0;
+    max-height: 400px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        background-color: $color-white;
+    }
+
+    &-link {
+        color: $color-white;
+    }
+}
+
+.asaid {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $color-grey;
+    // padding: 15px 15px;
+    padding: 15px;
+    background-color: rgba(99, 53, 24, 0.3);
+
+    &-img {
+        max-width: 80px;
+        height: 50px;
+        margin: 0 25px 0 0;
+
+        img {
+            width: 80px;
+            height: 50px;
+        }
+    }
+
+    &:hover {
+        background-color: rgb(176, 128, 38);
+        cursor: pointer;
+    }
+
+//    &-time {
+//        margin-left: 40px;
+//    }
+}
+

@@ -1,0 +1,41 @@
+/* #29bb27 */
+/*red*/
+
+.hidden {
+    transform: scale(0);
+}
+
+.toast {
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    transition: all 0.5s ease-in;
+}
+
+.toast__close {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+}
+
+
+.purpleBorder {
+    border-color: rgb(110, 7, 97);
+}
+
+.pinkBorder {
+    border-color: rgb(253, 169, 211)
+}

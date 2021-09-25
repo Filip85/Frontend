@@ -1,0 +1,28 @@
+.slider {
+
+    &__next {
+        position: absolute;
+        top: 35%;
+        left: 2%;
+
+        @include button(1em, 10px, 15px, "white", "black", "black", 50px);
+
+        // border-radius: 50%;
+        // padding: 10px 15px;
+
+        // background-color: white;
+        // border: 2px solid black;
+        
+    }
+
+    &__prev {
+        // border-radius: 50%;
+        // padding: 10px 15px;
+
+        position: absolute;
+        top: 35%;
+        right: 2%;
+
+        @include button(1em, 10px, 15px, "white", "black", "black", 50px);
+    }
+}

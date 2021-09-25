@@ -1,0 +1,29 @@
+.benefit {
+    background-color: $color-benefit;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+
+    a {
+        margin-right: 50px;
+        color: $color-primary;
+        @include display();
+
+        svg {
+            margin-right: 5px;
+            fill: white;
+        }
+    }
+
+
+
+    // &-wrapper {
+    //     max-width: 500px;
+    //     margin: auto;
+
+    //     a {
+    //         padding-right: 10px;
+    //         color: $color-primary;
+    //     }
+    // }
+}

@@ -1,0 +1,104 @@
+.list {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include display(center, center);
+    font-size: 1.1em;
+
+    // &-alt {
+    //     display: none;
+    // }
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        } 
+
+        // &-count {
+        //     font-size: 0.8em;
+        //     margin-right: 5px;
+        // }
+
+        &-number {
+            position: absolute;
+            top: calc(-15px + 0%);
+            right: calc(-15px + 0%);
+            background-color: blue;
+            color: white;
+            width: 22px;
+            height: 22px;
+            border-radius: 100%;
+            padding-left: 6px;
+            padding-top: 3px;
+        }
+
+        &-alt {
+            background-color: rgba($color-black, 0.1);
+            border: 1px solid transparent;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin-right: 0;
+
+            &:not(:last-child) {
+                margin-right: 5px;
+            } 
+        }
+
+        &-circle {
+            padding: 6px 5px;
+            border: 1px solid rgba($color-black, 0.2);
+            height: 31px;
+            width: 31px;
+            border-radius: 50%; 
+            background-color: transparent;
+        }
+
+        &-square {
+            border: 1px solid rgba($color-black, 0.2);
+            padding: 6px 6px 1px;
+            border-radius: 5px;
+            background-color: transparent;
+            width: 33px;
+        }
+    }
+
+    // &__input {
+    //     &-wrapper {
+    //         display: none;
+    //     }
+    // }
+
+    @include mq-down('tablet') {
+
+        &-alt {
+            display: none;
+        }
+
+        &__input {
+            &-wrapper {
+                display: none;
+                width: 42%;
+                margin: 0 45px 0 40px;
+                position: relative;
+            }
+        }        
+    }
+
+    @include mq-up('desktop') {
+        &-alt {
+            display: flex;
+        }
+
+        &__input {
+            &-wrapper {
+                display: block;
+                width: 42%;
+                margin: 0 45px 0 40px;
+                position: relative;
+            }
+        }
+    }
+
+}

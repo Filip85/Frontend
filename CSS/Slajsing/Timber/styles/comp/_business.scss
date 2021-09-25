@@ -1,0 +1,17 @@
+.business {
+    text-align: center;
+
+    &__title {
+        padding-bottom: 10px;
+    }
+
+    &__subtitle {
+        display: block;
+        padding-bottom: 40px;
+    }
+
+    &__image {
+        width: 300px;
+        margin: auto;
+    }
+}

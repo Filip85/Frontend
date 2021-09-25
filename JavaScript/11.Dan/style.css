@@ -1,0 +1,41 @@
+.box {
+    margin: 10px 0 0;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.color-black {
+    background-color: black;
+}
+
+.color-red {
+    background-color: red;
+}
+
+.green-border {
+    border: 10px solid green;
+}
+
+
+
+
+body {
+    background-color: #232;
+}
+
+#btn {
+    height: 25px;
+    width: 200px;
+    margin-left: 520px;
+    position: absolute;
+    border: none;
+}
+
+#target {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(250, 56, 2);
+    border-radius: 50px;
+}
+

@@ -1,0 +1,14 @@
+.description {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+
+    &__list {
+        padding-right: 25px;
+    }
+
+    &__title {
+        font-size: 1.6em;
+        padding-bottom: 15px;
+    }
+}

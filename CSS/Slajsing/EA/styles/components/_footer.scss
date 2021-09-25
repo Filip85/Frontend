@@ -1,0 +1,55 @@
+.footer {
+    padding: 55px 0 105px;
+
+    &-wrapper {
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: flex-start;
+    }
+
+    &__link {
+        color: $color-text;
+        text-decoration: none;
+    }
+
+    &__list {
+        font-size: 0.85em;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+
+        border-bottom: 2px solid $color-gray;
+    }
+
+    &__item {
+        display: block;
+        // margin: auto;
+        padding-bottom: 20px;
+    }
+
+    &__join {
+        font-weight: bold;
+    }
+
+    @include mq-up('tablet') {
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        &__list {
+            flex-direction: row;
+
+            border-bottom: 0;
+        }
+
+        &__item {
+            margin: 0 25px 0 0;
+        }
+
+        &__social {
+            padding-top: 0;
+        }
+    }
+}

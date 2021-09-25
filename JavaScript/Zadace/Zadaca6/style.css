@@ -1,0 +1,118 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 900px;
+    margin: 40px auto;
+    font-size: 20px;
+
+}
+
+/***********
+1. GENERAL 
+***************/
+
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0; 
+    padding: 0;
+    
+}
+
+p {
+    font-size: 0.75em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+
+/**********
+2. GRID AND CARD
+******************/
+.input-wrapper {
+    margin-bottom: 1em;
+}
+
+
+/**********
+2.1 GIRD
+***************/
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 14.6em);
+    grid-auto-rows: auto;
+    gap: 10px;
+}
+
+
+/************
+2.2. CARD
+****************/
+.card-container {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-left: 3px solid blue;
+    background-color: aqua;
+    width: 100%;
+    background: linear-gradient(to right bottom, white 50%, rgb(183, 192, 244) 50%);
+}
+
+.card-container-hidden {
+    display: none;
+}
+
+.card-container-show {
+    display: block;
+}
+
+.card {
+    max-width: 86%;
+    margin: auto;
+    padding: 0.5em;
+}
+
+address {
+    font-size: 0.5em;
+    /* max-width: 115px; */
+    margin-left: auto;
+    margin-top: 4.5em;
+    text-align: end;
+}
+
+/************
+3. POP UP
+*****************/
+form {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.display-form {
+   display: none;
+}
+
+.button-close {
+    position: absolute;
+    right: 1em;
+}
+
+input[type="submit"] {
+    display: block;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+form h2 {
+    padding-bottom: 1em;
+}
+
+
+
+
+

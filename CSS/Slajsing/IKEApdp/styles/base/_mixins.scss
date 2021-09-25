@@ -1,0 +1,42 @@
+@mixin mq-up($name) {
+    $min: map-get($grid, $name, 'min');
+
+    @media (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin mq-down($name) {
+    $max: map-get($grid, $name, 'max');
+
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin padding {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+@mixin button($fontSize, $paddingTB, $paddingLR, $backgroundColor, $color, $borderColor, $borderRadius) {
+    font-size: $fontSize;
+    padding: $paddingTB $paddingLR;
+    background-color: $backgroundColor;
+    color: $color;
+    border: 1px solid $borderColor;
+    border-radius: $borderRadius;
+    cursor: pointer;
+}
+
+@mixin display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-wrap: wrap;
+
+    // @include mq-up('tablet') {
+    //     display: block;
+    // }
+}

@@ -1,0 +1,33 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("https://www.tportal.hr/media/thumbnail/w1000/119578.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: white;
+    text-shadow: 1px 1px black;
+    overflow-y: hidden;
+    margin: 2em;
+}
+
+/*.recipe-card {
+    width: 700px;
+    margin: 130px auto;
+    background-color: rgba(152, 131, 93, 0.8);
+    padding: 20px;
+}*/
+
+.ing-ins{
+    width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(152, 131, 93, 0.8);
+    border-radius: 5px;
+}
+
+
+
+

@@ -1,0 +1,42 @@
+.next-article {
+    display: flex;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 20px 0;
+    margin-top: 0.6em;
+    transition: padding-left 0.5s;
+
+    &-img {
+        width: 150px;
+        height: 80px;
+        margin: 0 30px 0 0;
+    }
+
+    &-text {
+        height: 140px;
+    }
+
+    &-title, &-description, &-game {
+        margin: 0 0 0.4em;
+    }
+
+    &-game, &-description {
+        color: $color-grey;
+        display: block;
+    }
+
+    &-title {
+        font-size: 22px;
+        font-weight: map-get($font-weights, "medium");
+    }
+
+    &:hover {
+        padding-left: 20px;
+        background-color: $hover;
+        cursor: pointer;
+    }
+
+    span {
+        font-size: 15px;
+    }
+}

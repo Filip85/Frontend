@@ -1,0 +1,141 @@
+@use "sass:map";
+.service {
+    &-result {
+        margin-top: 2em;  
+    }
+
+    &-model {
+        background-color: yellow;  
+
+        &-name {
+            margin-bottom: 0;
+            padding: 1em 0;
+            color: red;
+            font-size: 1.5em;
+            text-align: center;  
+        }
+
+        &-message {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2em;  
+        }
+    }
+
+    &-button {
+        background-color: pink;
+        padding: 13em 1.5em;
+        border-radius: 5px;
+        color: white;  
+    }
+}
+
+$default-spacing: 1.5rem;
+$primary: #263238;
+$secondary: #455a64;
+
+.container {
+    color: $secondary;
+    padding: $default-spacing 0;
+
+    h1, h2 {
+        color: $primary;
+        margin-bottom: 2 * $default-spacing;
+    }
+
+    p {
+        margin-bottom: $default-spacing;
+    }
+
+    li {
+        margin-bottom: 0.5 * $default-spacing;
+    }
+    
+}
+
+
+$colors-map:(
+    primary: #1E90FF,
+    secondary:#4169E1,
+    text:#2F4F4F,
+    link:#A52A2A,
+    hover:#D2691E
+);
+
+.card {
+    padding: 1.5em;border: 2px solid;  
+    color: map.get($colors-map, "text");
+    border-color: map.get($colors-map, "secondary");
+
+    &-heading {
+        font-size: 2.25em;  
+        color: map.get($colors-map, "primary");
+    }
+
+    &-link {
+        text-decoration: none;  
+        color: map.get($colors-map, "link");
+
+        &:hover {
+            text-decoration: underline; 
+            color: map.get($colors-map, "hover");
+        }
+    }
+}
+
+
+/*3.1. Zadtak*/
+.message {
+    border: 2px solid #37373f;
+    border-radius: 3px;
+    color: #37474f;
+    text-align: center;
+
+    &-error {
+        @extend .message;
+
+        border-color: #d32f2f;
+        color: #d32f2f;
+        background-color: #ffcdd2;
+    }
+}
+
+/*3.2. Zadatak*/
+
+%link-placeholder {
+    text-decoration: none;
+    transform: color 300ms ease;
+    color: #42a5f5;
+
+    &:hover {
+        color: #ec407a;
+    }
+}
+
+.text-link, .footer-link, .sidebar-link {
+    @extend %link-placeholder;
+}
+
+/*4. Zadatak*/
+@mixin position($position: absolute, $top: 50%, $left: 50%) {
+    position: $position;
+    top: $top;
+    left: $left;
+    transform: translate(-$top, -$left);
+
+    @content;
+}
+
+.section {
+    @include position(relative, 30%, 70%) {
+        color: blue;
+        background-color: red;
+        font-size: 30px;
+        margin-top: 5em;
+        padding: 0.5em 1em;
+    }
+}
+
+

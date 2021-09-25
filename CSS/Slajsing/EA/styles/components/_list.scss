@@ -1,0 +1,26 @@
+.list {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        margin-right: 35px;
+        font-size: 1.2em;
+    }
+
+    &__logo {
+        width: 180px;
+        margin-right: 20px;
+    }
+
+
+    &__none {
+        display: none;
+    }
+
+    @include mq-up('tablet') {
+        // display: block;
+        &__none {
+            display: flex;
+        }
+    }
+}

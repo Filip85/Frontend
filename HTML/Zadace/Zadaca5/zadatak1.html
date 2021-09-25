@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="action-page" method="POST">
+        <fieldset>
+            <legend>Checkout page</legend>
+            <div class="delivery-puck-up">
+                <label for='radioDelivery'>Delivery</label>
+                <input type='radio' id='radioDelivery' name='choice' value='yes'>
+                <label for='radioPick-up'>Pick-up</label>
+                <input type='radio' id='radioPick-up' name='choice' value='yes'>
+            </div>
+            <div class="delivery-address">
+                <fieldset>
+                    <legend>Delivery address:</legend>
+                    <div class="input-wrapper">
+                        <div>
+                            <label for='first_name'>First name:</label>
+                            <input type='text' id='first_name' name='user_first_name' placeholder="enter your first name">
+                        </div>
+                        <br>
+                        <div>
+                            <label for='last_name'>Last name:</label>
+                            <input type='text' id='last_name' name='user_last_name' placeholder="enter your last name">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="input-wrapper">
+                        <div>
+                            <label for='street_name'>Street name:</label>
+                            <input type='text' id='street_name' name='user_street_name'
+                                placeholder="enter your street name">
+                        </div>
+                        <br>
+                        <div>
+                            <label for='street_number'>Street number:</label>
+                            <input type='text' id='street_number' name='user_street_number'
+                                placeholder="enter your street number">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="input-wrapper">
+                        <div>
+                            <label for='zip_code'>Zip code:</label>
+                            <input type='number' id='zip_code' name='user_zip_code' placeholder="enter your zip code">
+                        </div>
+                        <br>
+                        <div>
+                            <label for='town'>Town:</label>
+                            <input type='text' id='town' name='town' placeholder="enter your town name">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="input-wrapper">
+                        <div>
+                            <label for='country'>Country:</label>
+                            <input type='text' id='country' name='country' placeholder="enter your country name">
+                        </div>
+                        <br>
+                        <div>
+                            <label for='email'>E-mail:</label>
+                            <input type='email' id='email' name='email' placeholder="enter your e-mail">
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <label for='phone'>Phone number:</label>
+                        <input type='tel' id='phone' name='country' placeholder="enter your phone number">
+                    </div>
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Selection of store for pick-up:</legend>
+                    <label for='store'>Store:</label>
+                    <select id="winery" name="wineries">
+                        <option>--default--</option>
+                        <option>Vinarija Šipek</option>
+                        <option>Vinarija Pomona</option>
+                        <option>Vinarija Matočec</option>
+                        <option>Vinarija Kamenjak</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment details:</legend>
+                    <div class="payment-details">
+                        <div>
+                            <label for='credit_card'>Credit card number:</label>
+                            <input type="password" id='credit_card' name='credit_card'
+                                placeholder="enter your credit card number">
+                        </div>
+                        <br>
+                        <div>
+                            <label for='name_on_card'>Name on card:</label>
+                            <input type="text" id='name_on_card' name='name_on_card' 
+                                placeholder="enter your name on credit card number">
+                        </div>
+                        <br>
+                        <div>
+                            <label for='valid_until'>Valid until:</label>
+                            <input type="month" id='valid_until' name='valid'>
+                        </div>
+                        <br>
+                        <div>
+                            <label for='cvv'>CVV:</label>
+                            <input type="password" id='cvv' name='CVV' maxlength='3' placeholder="enter your 3 digits code">
+                        </div>
+                    </div>  
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Subscription to newsletter:</legend>
+                    <div>
+                        <label for='checkYes'>Yes</label>
+                        <input type='checkbox' id='checkYes' name='choice' value='yes'>
+                        <label for='checkNo'>No</label>
+                        <input type='checkbox' id='checkNo' name='choice' value='no'>
+                    </div>
+            </div>
+            <br>
+            <div class="submit-button">
+                <input type="submit"></input>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
+</body>
+</html>

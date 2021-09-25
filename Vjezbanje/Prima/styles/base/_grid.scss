@@ -1,0 +1,38 @@
+//Grid variables
+$grid-breakpont-s-max: 688px;
+$grid-breakpont-m-min: 689px;
+$grid-breakpont-m-max: 992px;
+$grid-breakpont-l-min: 993px;
+
+$grid: (
+    'phone': (
+        'max': $grid-breakpont-s-max
+    ),
+    'tablet': (
+        'min': $grid-breakpont-m-min,
+        'max': $grid-breakpont-m-max
+    ),
+    'desktop': (
+        'min': $grid-breakpont-l-min
+    )
+);
+
+.container {
+
+    &__primary {
+        max-width: 1600px;
+        // padding: 0 30px;
+        margin: auto;
+    }
+
+    &__secondary {
+        max-width: 1475px;
+        margin: auto;
+    }
+
+    &__third {
+        max-width: 1320px;
+        margin: auto;
+        padding: 0 30px;
+    }
+}

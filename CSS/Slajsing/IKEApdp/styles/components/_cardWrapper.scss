@@ -1,0 +1,62 @@
+.card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    // gap: 10px;
+    // margin: 45px 0 70px;
+    margin-bottom: 50px;
+
+    // &--aside {
+    //     grid-template-columns: repeat(4, 60px);
+    //     gap: 2px
+    // }
+
+    // &--small {
+    //     grid-template-columns: repeat(4, 230px);
+    //     padding-top: 45px;
+    // }
+
+    &--aside {
+        grid-template-columns: repeat(4, 60px);
+        gap: 2px;
+        margin-top: 30px;
+    }
+
+    &--small {
+        grid-template-columns: repeat(4, 230px);
+        padding-top: 45px;
+    }
+
+    &--big {
+        grid-template-columns: repeat(5, 330px);
+        padding-top: 45px;
+    }
+
+    &-alt {
+        grid-template-columns: repeat(6, 130px);
+        padding-top: 45px;
+    }
+
+    @include mq-up('tablet') {
+        grid-template-columns: repeat(2, 466px);
+
+        &--small {
+            grid-template-columns: repeat(4, 230px);
+            padding-top: 45px;
+        }
+
+        &--big {
+            grid-template-columns: repeat(5, 330px);
+            padding-top: 45px;
+        }
+
+        &-alt {
+            grid-template-columns: repeat(6, 130px);
+            padding-top: 45px;
+        }
+
+        &--aside {
+            grid-template-columns: repeat(4, 60px);
+            gap: 2px
+        }
+    }
+}

@@ -1,0 +1,232 @@
+body {
+    margin: 50px auto;
+    max-width: 400px;
+}
+
+.wide {
+    display: block;
+    background-color: rgb(104, 133, 249);
+    padding: 0.5rem;
+}
+
+.hide-me {
+    display: none;
+}
+
+/* div:not([class^="hide-me"]) {
+    display: inline;
+} */
+
+/* div > div {
+    color: green;
+    display: inline;
+}
+
+.link {
+    border: 3px solid red;
+    display: inline-block;
+    line-height: 0;
+} */
+/* display: block;
+    margin-top: 1rem; */
+
+/* img {
+    border: 2px solid red;
+} */
+
+
+.avatar {
+    width: 5rem;
+    height: 5rem;
+    background-color: dodgerblue;
+    float: left;
+}
+
+
+/*Zadatak 2*/
+
+/* div {
+    background-color: dodgerblue;
+    border-radius: 5px;
+    width: 9rem;
+    height: 9rem;
+    float: right;
+}
+
+.box-1 {
+    float: left;
+    margin-right: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.box-2 {
+    float: right;
+} 
+
+p:last-of-type {
+    clear: both;
+    margin: 0;
+}   */
+
+/* p:first-of-type::after {
+    content:"";
+    display: block;
+    clear: both;
+    margin: 0;
+} 
+
+/*Zadatak 3*/
+
+/* div > div {
+    background-color: dodgerblue;
+    border-radius: 5px;
+    width: 9rem;
+    height: 9rem;
+    float: right;
+}
+
+.wrapper {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+/*ZADATAK 4 - tablica*/
+/* table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th:nth-of-type(1) {
+    width: 20%;
+}
+
+th:nth-of-type(2) {
+    width: 30%;
+}
+
+th:nth-of-type(3) {
+    width: 50%;
+}
+
+th, td {
+    border: 1px solid lightgrey;
+    padding: 0.5em;
+    border-top: 0;
+}
+
+tr td:first-child,
+tr th:first-child {
+    border-left: 0;
+}
+
+tr td:last-child,
+tr th:last-child {
+    border-right: 0;
+}
+
+tr:last-of-type td {
+    border-bottom: 0;
+}
+
+th {
+    text-align: left;
+} */
+
+/*ZADATAK 4.1*/
+/* table {
+    width: 50%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 15px;
+    table-layout: fixed;
+    width: 500px;
+}
+
+thead {
+    color: white;
+}
+
+tr td:last-of-type, th:last-of-type{
+    text-align: right;
+}
+
+thead tr {
+    background-color: rgb(57, 162, 227);
+    height: 25px;
+}
+
+thead {
+    border-bottom: 2px solid white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(192, 225, 245);
+}
+
+tbody tr:hover {
+    background-color: rgb(57, 162, 227);
+    color: white;
+}
+
+tbody tr {
+    border-bottom: 1px solid grey;
+}
+
+td, td {
+    padding: 5px;
+} */
+
+/* tbody::before {
+    content: ".";
+    display: block;
+    line-height: 0.2;
+    color: transparent;
+} */
+
+
+/*Zadatak 5 - flexbox*/
+/* .container {
+    height: 70vh;
+    border: 1px solid tomato;
+    display: flex;
+}
+
+.box {
+    flex-basis: 100px;
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    background-color: dodgerblue;
+    color: white;
+    padding: 1rem;
+}
+
+.box-1 {
+    flex-grow: 3;
+} */
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

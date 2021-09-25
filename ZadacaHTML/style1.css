@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.background-images{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-template-rows: 520px 1fr;
+    justify-content: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hummus-list {
+    position: absolute;
+    color: white;
+    background-color: rgb(147, 106, 30, 0.8);
+    padding: 20px;
+    margin: auto;
+    top: 40%;
+    left: 35%
+}
+
+dt{
+    text-decoration: underline;
+}
+
+dd {
+   margin-left: 30px; 
+}
+
+p {
+    margin-top: 10px
+}
+
+a {
+    color: pink;
+    text-decoration: none;
+}
+
+
+

@@ -1,0 +1,49 @@
+.footer {
+    padding: 65px 0 40px;
+
+    &__cert {
+        padding-right: 25px;
+    }
+
+    &__social {
+        padding-right: 25px;
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 80px 0;
+    }
+
+    &__address {
+        width: 740px;
+        line-height: 1.3;
+    }
+
+    &__paymant {
+        max-width: 60px;
+        
+        &-wrapper {
+            margin: auto;
+        }
+    }
+
+    &__copyright {
+        color: rgba($color-black, 0.6);
+        margin: auto;
+        font-size: 0.5;
+        text-align: center;
+
+        p {
+            font-size: 0.8em;
+            line-height: 1.5;
+        }
+    }
+
+    @include mq-up("desktop") {
+        &__information {
+            flex-direction: row;
+        }
+    }
+}

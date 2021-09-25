@@ -1,0 +1,30 @@
+.card {
+    background-color: #161616;
+    border-bottom: 8px solid $color-red;
+    line-height: 1.4;
+    
+    &__content {
+        margin: 20px 25px 170px;
+    }
+
+    &__game {
+        font-size: 0.98em;
+        color: $color-red;
+        padding: 0 10px 10px 0;
+        display: inline-block;
+    }
+
+    &__title {
+        font-size: 1.5em;
+        padding-bottom: 15px;
+    }
+
+    &__description {
+        font-size: 1.2em;
+        opacity: 0.8;
+    }
+
+    a {
+        display: block;
+    }
+}

@@ -1,0 +1,69 @@
+body {
+    background-color: lightskyblue;
+    width: 600px;
+    margin: auto;
+}
+
+ul, ol {
+    margin: 20px;
+    padding: 5px;
+}
+
+li {
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    padding: 8px 10px;
+}
+
+ul li {
+    list-style: square;
+}
+
+ol li {
+    list-style: decimal;
+    color: blue;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+    text-transform: uppercase; 
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+a:hover {
+    color: chartreuse;
+}
+
+a:focus{
+    font-size: 20px;
+}
+
+a:visited {
+    color: chocolate;
+}
+
+p::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+}
+blockquote {
+    margin-bottom: 20px;
+}
+
+blockquote::before{
+    content: "Ovo je prije blockquotea";
+    color: rgb(247, 152, 168);
+    display: block;
+}
+
+blockquote::after {
+    content: "Ovo je poslije blockquotea";
+    color: rgb(247, 152, 168);
+    display: inline;
+}

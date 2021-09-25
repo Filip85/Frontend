@@ -1,0 +1,52 @@
+.weekly {
+    &-container {
+        margin: 0 0 40px;
+    }
+
+    &-title {
+        display: block;
+    }
+
+    &-time{
+        // padding: 20px;
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 20px;
+            margin: 20px 20px 0 20px;
+            background: white;
+            position: relative;
+            top: 5px;
+        }
+    }
+
+    &-social {
+        display: inline;
+        // font-size: 0px;
+
+        img {
+            position: relative;
+            top: 5px
+        }
+    }
+
+    &-img {
+        border: 1px solid $color-grey;
+    }
+    
+    &-img, h2, p {
+        margin: 0 0 2em;
+    }
+}
+
+.list {
+    &-item {
+        list-style: decimal;
+        margin: 0 0 15px;
+    }
+}
+
+.small-h2 {
+    font-size: 14px;
+}

@@ -1,0 +1,31 @@
+.button {
+
+    &__primary {
+        @include button(100%, 24px, 25px, 18px, 1.2em, $color-text, transparent, $color-text)
+    }
+
+    &__secondary {
+        @include button(100%, 48px, 40px, 18px, 1.2em, $color-white, $color-red, $color-red);
+
+        // &:hover {
+        //     transition: border 0.1s ease-in;
+        //     border: 4px solid $color-red;
+        // }
+    }
+
+    @include mq-up('tablet') {
+        &__primary {
+            @include button(200px, 24px, 25px, 18px, 1.2em, $color-text, transparent, $color-text)
+        }
+    }
+
+    @include mq-up('tablet') {
+        &__secondary {
+            @include button(200px, 48px, 40px, 18px, 1.2em, $color-white, $color-red, $color-red)
+        }
+    }
+
+    // &:hover {
+    //     padding: ;
+    // }
+}
