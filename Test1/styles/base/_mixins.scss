@@ -1,0 +1,43 @@
+@mixin mq-up($name) {
+    $min: map-get($grid, $name, 'min');
+
+    @media (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin mq-down($name) {
+    $max: map-get($grid, $name, 'max');
+
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin button($fontSize, $paddingLR, $paddingTB, $color, $bg) {
+    font-size: $fontSize;
+    padding: $paddingTB $paddingLR;
+    color: $color;
+    background-color: $bg;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+@mixin circle($width, $height, $paddingL, $paddingT) {
+    // border-radius: 50px;
+    // background-color: $color-green;
+    // width: 20px;
+    // height: 20px;
+    // padding-left: 6px;
+    // padding-top: 2px;
+    // color: $color-white;
+    // border-radius: 50px;
+    border-radius: 50px;
+    background-color: $color-green;
+    width: $width;
+    height: $height;
+    padding-left: $paddingL;
+    padding-top: $paddingT;
+    color: $color-white;
+}

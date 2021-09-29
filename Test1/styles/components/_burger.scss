@@ -1,0 +1,17 @@
+.burger {
+    border-left: 1px solid $color-gray-four;
+    margin-left: 15px;
+    display: block;
+    padding: 25px;
+
+    &__line {
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: $color-black;
+    }
+
+    @include mq-up("desktop") {
+        display: none;
+    }
+}

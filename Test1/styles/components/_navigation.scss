@@ -1,0 +1,16 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &__title {
+        font-size: 1.5em;
+        color: $color-black;
+        padding-left: 10px;
+    }
+
+    &__cart {
+        display: flex;
+    }
+}

@@ -1,0 +1,38 @@
+.hello {
+    border-radius: 3px;
+    text-align: center;
+    line-height: 1.1;
+    background-color: $color-white;
+    padding: 0 75px;
+    border-radius: 20px;
+    margin: 20px;
+
+    &-wrapper {
+        max-width: 570px;
+        height: 330px;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+    }
+
+    &__intro {
+        display: block;
+        padding: 20px 0 20px;
+        color: $color-green;
+    }
+
+    &__title {
+        font-size: 2.5em;
+        color: $color-black;
+    }
+
+    &__button {
+        margin: 25px 0 60px
+    }
+
+    @include mq-up("tablet") {
+        &__intro {
+            padding: 60px 0 25px;
+        }
+    }
+}

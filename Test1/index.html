@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="visually-hidden">Toyz</h1>
+        <div class="information-wrapper">
+            <div class="container">
+                <div class="information">
+                    <div class="information__contacts-wrapper">
+                        <span class="information__contacts">Call Us: +1 213 974-5898</span>
+                        <span class="information__contacts">Email: <a class="information__link"
+                                href="#">shop@toys.com</a></span>
+                    </div>
+
+                    <div class="information__icons">
+                        <svg class="svg svg__white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                        </svg>
+                        <svg class="svg svg__white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                        </svg>
+                        <svg class="svg svg__white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                        <svg class="svg svg__white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"
+                                fill-rule="evenodd" clip-rule="evenodd" />
+                        </svg>
+                        <svg class="svg svg__white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navigation">
+                <div class="list__primary-wrapper">
+                    <span class="navigation__title">Toys</span>
+                    <ul class="list list__primary">
+                        <li class="list__item list__item-primary"><a class="list__link" href="#">Catalog</a></li>
+                        <li class="list__item list__item-primary"><a class="list__link" href="#">Delivery</a></li>
+                        <li class="list__item list__item-primary"><a class="list__link" href="#">About</a></li>
+                        <li class="list__item list__item-primary"><a class="list__link" href="#">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <div class="navigation__cart">
+                    <ul class="list list-cart">
+                        <li class="list__item"><a class="list__link" href="#">Cart</a></li>
+                        <li class="list__item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z" />
+                            </svg></li>
+                        <li class="list__item-circle"><span class="list__quantity">1</span></li>
+                    </ul>
+                    <div class="burger">
+                        <div class="burger__line"></div>
+                        <div class="burger__line"></div>
+                        <div class="burger__line"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section__hello">
+            <h2 class="visually-hidden">Say Hello</h2>
+            <img src="assets/01.jpeg">
+            <article class="hello-wrapper">
+                <div class="hello">
+                    <span class="hello__intro">Say Hello to Toys</span>
+                    <h3 class="hello__title">Free Ecommerce Template for Kidz</h3>
+                    <button class="hello__button button__green-big">Open Catalog</button>
+                </div>
+            </article>
+        </section>
+
+        <section class="section__types">
+            <div class="container">
+                <h2 class="visually-hidden">Types of toys</h2>
+
+                <div class="card-wrapper card-wrapper-alt">
+                    <article class="card card__stuffed">
+                        <div class="card__stuffed__content">
+                            <div class="card__image">
+                                <img src="assets/stuffed/03.png">
+                            </div>
+                            <h3 class="card__title-big">Stuffed Animals</h3>
+                            <button class="card__button button__white">Shop Now</button>
+                        </div>
+                    </article>
+                    <article class="card card__wooden">
+                        <div class="card__wooden__content">
+                            <div class="card__image card__image-alt">
+                                <img src="assets/wooden/04.png">
+                            </div>
+                            <h3 class="card__title-big">Wooden Toys</h3>
+                            <button class="card__button-alt button__white">Shop Now</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__stuffed">
+            <div class="container">
+                <div class="section__header section__header-alt">
+                    <h2 class="section__title">Wooden Animals</h2>
+                    <span class="section__all">See all Toys<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
+                        </svg></span>
+                </div>
+
+                <div class="card-wrapper">
+                    <article class="card">
+                        <img src="assets/stuffed/03.png">
+                        <h3 class="card__title">Teddy Bear</h3>
+                        <button class="button__green-small">$ 30.00 USD</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="assets/stuffed/05.png">
+                        <h3 class="card__title">Mega Plush Toy</h3>
+                        <button class="button__green-small">$ 38.00 USD</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="assets/stuffed/06.png">
+                        <h3 class="card__title">Cute Dog</h3>
+                        <button class="button__green-small">$ 24.00 USD</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="assets/stuffed/07.png">
+                        <h3 class="card__title">Little Friend</h3>
+                        <button class="button__green-small">$ 27.00 USD</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__stuffed">
+            <div class="container">
+                <div class="section__header section__header-alt">
+                    <h2 class="section__title">Wooden Animals</h2>
+                    <span class="section__all">See all Toys<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
+                        </svg></span>
+                </div>
+
+                <div class="card-wrapper">
+                    <article class="card">
+                        <img src="assets/wooden/04.png">
+                        <h3 class="card__title">Happy Flower</h3>
+                        <button class="button__green-small">$ 38.00 USD</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="assets/wooden/08.png">
+                        <h3 class="card__title">Lift Machine</h3>
+                        <button class="button__green-small">$ 24.00 USD</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="assets/wooden/09.png">
+                        <h3 class="card__title">Wooden Camera</h3>
+                        <button class="button__green-small">$ 32.00 USD</button>
+                    </article>
+
+                    <article class="card">
+                        <img src="assets/wooden/10.png">
+                        <h3 class="card__title">Littlw Rabbit</h3>
+                        <button class="button__green-small">$ 16.00 USD</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__about">
+            <div class="about">
+                <span>About the Shop</span>
+                <h2 class="about__title">Watch Our Story</h2>
+                <p class="about__description">There is no magic formula to write perfect ad copy. It is based on number
+                    of factors, including add
+                    placement, demographic, even the consumer's mood</p>
+                <svg class="svg__green" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
+                </svg>
+            </div>
+        </section>
+
+        <section class="section__template">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__intro">Made for Kidz</span>
+                    <h2>Simple & Colorful Ecommerce Template for Your Business</h2>
+                </div>
+                <div class="card-wrapper card-wrapper-two">
+                    <article class="card__free down">
+                        <h3 class="card__title-alt">Available for FREE!</h3>
+                        <p class="card__free__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                            illo modi porro voluptatem
+                            ducimus enim molestias omnis et
+                            quas ea, nostrum officiis, praesentium corrupti alias sed tenetur dignissimos adipisci
+                            optio?
+                        </p>
+                        <button class="button__green-big">GET IT NOW!</button>
+                    </article>
+                    <div class="up">
+                        <img src="assets/02.jpeg">
+                    </div>
+                </div>
+                <div class="form">
+                    <div class="form__subscribe">
+                        <div class="form__circle">
+                            <svg class="svg__white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" />
+                            </svg>
+                        </div>
+                        <h2 class="form__title">Subscribe to our newsleter & get<span class="form__discount">10%
+                                discount!</span></h2>
+                    </div>
+
+                    <div class="form__input-wrapper">
+                        <input class="form__input" type="email" value="Enter your email address">
+                        <button class="form__button button__green-big">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__instagram">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__intro">@Toys</span>
+                    <h2 class="section__title">We're on Instagram!</h2>
+                </div>
+                <div class="card-wrapper card-wrapper-instagram">
+                    <div class="card__instagram">
+                        <img src="assets/stuffed/03.png" alt="">
+                    </div>
+                    <div class="card__instagram">
+                        <img src="assets/stuffed/03.png" alt="">
+                    </div>
+                    <div class="card__instagram">
+                        <img src="assets/stuffed/03.png" alt="">
+                    </div>
+                    <div class="card__instagram">
+                        <img src="assets/stuffed/03.png" alt="">
+                    </div>
+                    <div class="card__instagram">
+                        <img src="assets/stuffed/03.png" alt="">
+                    </div>
+                    <div class="card__instagram">
+                        <img src="assets/stuffed/03.png" alt="">
+                    </div>
+                </div>
+                <button class="button__green-big">See More Photos</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__primary">
+                <span class="footer__title">Toys</span>
+                <ul class="list">
+                    <li class="list__item"><a class="footer__link" href="#">Home</a></li>
+                    <li class="list__item"><a class="footer__link" href="#">Catalog</a></li>
+                    <li class="list__item"><a class="footer__link" href="#">Delivery</a></li>
+                    <li class="list__item"><a class="footer__link" href="#">About</a></li>
+                    <li class="list__item"><a class="footer__link" href="#">Contacts</a></li>
+                </ul>
+
+                <div class="information__icons footer__icons">
+                    <svg class="svg svg__white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                    </svg>
+                    <svg class="svg svg__white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                    </svg>
+                    <svg class="svg svg__white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                    <svg class="svg svg__white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"
+                            fill-rule="evenodd" clip-rule="evenodd" />
+                    </svg>
+                    <svg class="svg svg__white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="footer__secondary">
+                <span class="footer__secondary__link"><a href="#">Style Guide</a></span>
+                <span><a href="#">Licensing</a></span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

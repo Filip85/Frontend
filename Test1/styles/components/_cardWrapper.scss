@@ -1,0 +1,71 @@
+.card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 55px 10px 0;
+
+    &-alt {
+        grid-template-columns: 1fr;
+    }
+
+    &-two {
+        grid-template-columns: 1fr;
+
+        .up {
+            order: 1;
+        }
+
+        .down {
+            order: 2;
+        }
+    }
+
+    &-instagram {
+        gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 70px;
+    }
+
+    @include mq-up("tablet") {
+        grid-template-columns: repeat(2, 1fr);
+
+        &-alt {
+            grid-template-columns: repeat(1, 570px);
+            justify-content: center;
+        }
+
+        &-instagram {
+            grid-template-columns: repeat(3, 1fr);
+        }     
+        
+        &-two {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @include mq-up("desktop") {
+        grid-template-columns: repeat(4, 1fr);
+
+        &-alt {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &-two {
+            grid-template-columns: repeat(2, 1fr);
+            
+
+            .up {
+                order: 2;
+            }
+    
+            .down {
+                order: 1;
+            }
+        }
+
+        &-instagram {
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+
+}

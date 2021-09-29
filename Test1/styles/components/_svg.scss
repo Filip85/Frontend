@@ -1,0 +1,21 @@
+
+
+.svg {
+    width: 1.5em;
+    height: 0.9em;
+
+    &__white {
+        fill: $color-white;
+    }
+
+    &__black {
+        display: block;
+        padding-right: 10px;
+    }
+
+    &__green {
+        width: 4em;
+        height: 4em;
+        fill: $color-green;
+    }
+}

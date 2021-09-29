@@ -1,0 +1,134 @@
+.card {
+    background-color: white;
+    box-shadow: 0px 2px 3px rgb(199, 199, 199);
+    border-radius: 20px;
+    padding: 40px 60px 30px;
+    text-align: center;
+
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    &__stuffed {
+        background-color: $color-orange;
+        position: relative;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 50px;
+    }
+
+    &__wooden {
+        background-color: $color-pink;
+        position: relative;
+        height: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    &__image {
+        position: absolute;
+        width: 280px;
+        top: -20%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0 auto;
+
+        &-alt {
+            width: 150px;
+        }
+    }
+
+    &__button {
+        margin-right: 60px;
+
+        &-alt {
+            margin-left: 50px;
+        }
+    }
+
+    &__title {
+        padding: 35px 0 20px;
+        &-big {
+            font-size: 1.8em;
+            padding-bottom: 25px;
+            color: $color-white;
+        }
+
+        &-alt {
+            font-size: 2em;
+            padding-bottom: 25px;
+            color: $color-black;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 45%;
+                width: 75px;
+                height: 1px;
+                margin-top: 25px;
+                display: block;
+                border-bottom: 2px solid $color-green;
+            }
+        }
+    }
+
+    &__free {
+        width: 455px;
+        text-align: center;
+        line-height: 1.5;
+        margin: auto;
+
+        &__content {
+            padding: 25px 0;
+        }
+    }
+
+    &__instagram {
+        border: 1px solid $color-black;
+        border-radius: 20px;
+    }
+
+    @include mq-up("tablet") {
+        &__stuffed {
+            display: block;
+            text-align: right;
+            height: auto;
+            margin-bottom: 0;
+        }
+
+        &__wooden {
+            display: block;
+            text-align: left;
+            height: auto;
+        }
+
+        &__image {
+            position: absolute;
+            width: 175px;
+            right: 40%;
+
+            &-alt {
+                left: 50%;
+            }
+        }
+
+        &__title {
+
+            &-alt {
+                &::after {
+                    left: 21.5%;
+                }
+            }
+        }
+
+        &__free {
+            text-align: left;
+        }
+        
+    }
+}
